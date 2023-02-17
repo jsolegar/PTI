@@ -1,0 +1,11 @@
+0:0:0:0:0:0:0:1 - - [17/Feb/2023:14:33:20 +0100] "GET /my_webapp/carrental_form_new.html HTTP/1.1" 200 1092
+0:0:0:0:0:0:0:1 - - [17/Feb/2023:14:33:21 +0100] "GET /favicon.ico HTTP/1.1" 200 21630
+0:0:0:0:0:0:0:1 - - [17/Feb/2023:14:33:25 +0100] "GET /my_webapp/carrental_form_list.html HTTP/1.1" 200 635
+0:0:0:0:0:0:0:1 - - [17/Feb/2023:14:41:25 +0100] "GET /my_webapp/carrental_form_list.html HTTP/1.1" 304 -
+0:0:0:0:0:0:0:1 - - [17/Feb/2023:14:41:31 +0100] "POST /my_webapp/list HTTP/1.1" 404 770
+0:0:0:0:0:0:0:1 - - [17/Feb/2023:14:42:24 +0100] "POST /my_webapp/list HTTP/1.1" 404 770
+0:0:0:0:0:0:0:1 - - [17/Feb/2023:14:42:38 +0100] "GET /my_webapp/carrental_form_list.html HTTP/1.1" 304 -
+0:0:0:0:0:0:0:1 - - [17/Feb/2023:14:42:42 +0100] "POST /my_webapp/list HTTP/1.1" 404 770
+0:0:0:0:0:0:0:1 - - [17/Feb/2023:14:44:01 +0100] "POST /my_webapp/list HTTP/1.1" 200 35
+0:0:0:0:0:0:0:1 - - [17/Feb/2023:14:45:16 +0100] "POST /my_webapp/list HTTP/1.1" 200 35
+0:0:0:0:0:0:0:1 - - [17/Feb/2023:14:45:19 +0100] "POST /my_webapp/list HTTP/1.1" 200 -
