@@ -1,647 +1,3 @@
-NOTE: Picked up JDK_JAVA_OPTIONS:  --add-opens=java.base/java.lang=ALL-UNNAMED --add-opens=java.base/java.io=ALL-UNNAMED --add-opens=java.base/java.util=ALL-UNNAMED --add-opens=java.base/java.util.concurrent=ALL-UNNAMED --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
-17-Feb-2023 14:33:15.344 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/10.0.10
-17-Feb-2023 14:33:15.346 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Jul 30 2021 09:51:27 UTC
-17-Feb-2023 14:33:15.347 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 10.0.10.0
-17-Feb-2023 14:33:15.353 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Linux
-17-Feb-2023 14:33:15.353 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            5.4.0-125-generic
-17-Feb-2023 14:33:15.353 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
-17-Feb-2023 14:33:15.354 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             /usr/lib/jvm/java-11-openjdk-amd64
-17-Feb-2023 14:33:15.354 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           11.0.17+8-post-Ubuntu-1ubuntu220.04
-17-Feb-2023 14:33:15.354 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Ubuntu
-17-Feb-2023 14:33:15.354 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         /home/alumne/Desktop/pti/servlets/apache-tomcat-10.0.10
-17-Feb-2023 14:33:15.354 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         /home/alumne/Desktop/pti/servlets/apache-tomcat-10.0.10
-17-Feb-2023 14:33:15.371 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.lang=ALL-UNNAMED
-17-Feb-2023 14:33:15.371 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.io=ALL-UNNAMED
-17-Feb-2023 14:33:15.371 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util=ALL-UNNAMED
-17-Feb-2023 14:33:15.372 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util.concurrent=ALL-UNNAMED
-17-Feb-2023 14:33:15.372 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
-17-Feb-2023 14:33:15.372 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=/home/alumne/Desktop/pti/servlets/apache-tomcat-10.0.10/conf/logging.properties
-17-Feb-2023 14:33:15.372 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
-17-Feb-2023 14:33:15.372 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
-17-Feb-2023 14:33:15.372 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
-17-Feb-2023 14:33:15.372 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dorg.apache.catalina.security.SecurityListener.UMASK=0027
-17-Feb-2023 14:33:15.372 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dignore.endorsed.dirs=
-17-Feb-2023 14:33:15.373 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=/home/alumne/Desktop/pti/servlets/apache-tomcat-10.0.10
-17-Feb-2023 14:33:15.373 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=/home/alumne/Desktop/pti/servlets/apache-tomcat-10.0.10
-17-Feb-2023 14:33:15.373 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=/home/alumne/Desktop/pti/servlets/apache-tomcat-10.0.10/temp
-17-Feb-2023 14:33:15.375 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The Apache Tomcat Native library which allows using OpenSSL was not found on the java.library.path: [/usr/java/packages/lib:/usr/lib/x86_64-linux-gnu/jni:/lib/x86_64-linux-gnu:/usr/lib/x86_64-linux-gnu:/usr/lib/jni:/lib:/usr/lib]
-17-Feb-2023 14:33:15.756 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
-17-Feb-2023 14:33:15.780 INFO [main] org.apache.catalina.startup.Catalina.load Server initialization in [701] milliseconds
-17-Feb-2023 14:33:15.831 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
-17-Feb-2023 14:33:15.832 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet engine: [Apache Tomcat/10.0.10]
-17-Feb-2023 14:33:15.837 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/alumne/Desktop/pti/servlets/apache-tomcat-10.0.10/webapps/ROOT]
-17-Feb-2023 14:33:16.102 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/alumne/Desktop/pti/servlets/apache-tomcat-10.0.10/webapps/ROOT] has finished in [265] ms
-17-Feb-2023 14:33:16.102 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/alumne/Desktop/pti/servlets/apache-tomcat-10.0.10/webapps/my_webapp]
-17-Feb-2023 14:33:16.157 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
-17-Feb-2023 14:33:16.164 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/alumne/Desktop/pti/servlets/apache-tomcat-10.0.10/webapps/my_webapp] has finished in [62] ms
-17-Feb-2023 14:33:16.165 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/alumne/Desktop/pti/servlets/apache-tomcat-10.0.10/webapps/manager]
-17-Feb-2023 14:33:16.202 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/alumne/Desktop/pti/servlets/apache-tomcat-10.0.10/webapps/manager] has finished in [37] ms
-17-Feb-2023 14:33:16.204 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/alumne/Desktop/pti/servlets/apache-tomcat-10.0.10/webapps/examples]
-17-Feb-2023 14:33:16.412 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/alumne/Desktop/pti/servlets/apache-tomcat-10.0.10/webapps/examples] has finished in [208] ms
-17-Feb-2023 14:33:16.412 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/alumne/Desktop/pti/servlets/apache-tomcat-10.0.10/webapps/host-manager]
-17-Feb-2023 14:33:16.433 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/alumne/Desktop/pti/servlets/apache-tomcat-10.0.10/webapps/host-manager] has finished in [21] ms
-17-Feb-2023 14:33:16.433 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/alumne/Desktop/pti/servlets/apache-tomcat-10.0.10/webapps/docs]
-17-Feb-2023 14:33:16.448 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/alumne/Desktop/pti/servlets/apache-tomcat-10.0.10/webapps/docs] has finished in [15] ms
-17-Feb-2023 14:33:16.451 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8080"]
-17-Feb-2023 14:33:16.463 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in [682] milliseconds
-17-Feb-2023 14:41:14.484 INFO [main] org.apache.catalina.core.StandardServer.await A valid shutdown command was received via the shutdown port. Stopping the Server instance.
-17-Feb-2023 14:41:14.487 INFO [main] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-8080"]
-17-Feb-2023 14:41:14.509 INFO [main] org.apache.catalina.core.StandardService.stopInternal Stopping service [Catalina]
-17-Feb-2023 14:41:14.526 WARNING [main] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesObjectStreamClassCaches Failed to clear soft references from ObjectStreamClass$Caches for web application [ROOT]
-	java.lang.ClassCastException: class java.io.ObjectStreamClass$Caches$1 cannot be cast to class java.util.Map (java.io.ObjectStreamClass$Caches$1 and java.util.Map are in module java.base of loader 'bootstrap')
-		at org.apache.catalina.loader.WebappClassLoaderBase.clearCache(WebappClassLoaderBase.java:2363)
-		at org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesObjectStreamClassCaches(WebappClassLoaderBase.java:2338)
-		at org.apache.catalina.loader.WebappClassLoaderBase.clearReferences(WebappClassLoaderBase.java:1706)
-		at org.apache.catalina.loader.WebappClassLoaderBase.stop(WebappClassLoaderBase.java:1634)
-		at org.apache.catalina.loader.WebappLoader.stopInternal(WebappLoader.java:429)
-		at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:257)
-		at org.apache.catalina.core.StandardContext.stopInternal(StandardContext.java:5464)
-		at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:257)
-		at org.apache.catalina.core.ContainerBase$StopChild.call(ContainerBase.java:1412)
-		at org.apache.catalina.core.ContainerBase$StopChild.call(ContainerBase.java:1401)
-		at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-		at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75)
-		at java.base/java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:140)
-		at org.apache.catalina.core.ContainerBase.stopInternal(ContainerBase.java:986)
-		at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:257)
-		at org.apache.catalina.core.ContainerBase$StopChild.call(ContainerBase.java:1412)
-		at org.apache.catalina.core.ContainerBase$StopChild.call(ContainerBase.java:1401)
-		at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-		at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75)
-		at java.base/java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:140)
-		at org.apache.catalina.core.ContainerBase.stopInternal(ContainerBase.java:986)
-		at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:257)
-		at org.apache.catalina.core.StandardService.stopInternal(StandardService.java:497)
-		at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:257)
-		at org.apache.catalina.core.StandardServer.stopInternal(StandardServer.java:979)
-		at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:257)
-		at org.apache.catalina.startup.Catalina.stop(Catalina.java:872)
-		at org.apache.catalina.startup.Catalina.start(Catalina.java:834)
-		at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-		at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-		at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-		at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-		at org.apache.catalina.startup.Bootstrap.start(Bootstrap.java:345)
-		at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:476)
-17-Feb-2023 14:41:14.608 WARNING [main] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesObjectStreamClassCaches Failed to clear soft references from ObjectStreamClass$Caches for web application [examples]
-	java.lang.ClassCastException: class java.io.ObjectStreamClass$Caches$1 cannot be cast to class java.util.Map (java.io.ObjectStreamClass$Caches$1 and java.util.Map are in module java.base of loader 'bootstrap')
-		at org.apache.catalina.loader.WebappClassLoaderBase.clearCache(WebappClassLoaderBase.java:2363)
-		at org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesObjectStreamClassCaches(WebappClassLoaderBase.java:2338)
-		at org.apache.catalina.loader.WebappClassLoaderBase.clearReferences(WebappClassLoaderBase.java:1706)
-		at org.apache.catalina.loader.WebappClassLoaderBase.stop(WebappClassLoaderBase.java:1634)
-		at org.apache.catalina.loader.WebappLoader.stopInternal(WebappLoader.java:429)
-		at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:257)
-		at org.apache.catalina.core.StandardContext.stopInternal(StandardContext.java:5464)
-		at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:257)
-		at org.apache.catalina.core.ContainerBase$StopChild.call(ContainerBase.java:1412)
-		at org.apache.catalina.core.ContainerBase$StopChild.call(ContainerBase.java:1401)
-		at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-		at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75)
-		at java.base/java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:140)
-		at org.apache.catalina.core.ContainerBase.stopInternal(ContainerBase.java:986)
-		at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:257)
-		at org.apache.catalina.core.ContainerBase$StopChild.call(ContainerBase.java:1412)
-		at org.apache.catalina.core.ContainerBase$StopChild.call(ContainerBase.java:1401)
-		at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-		at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75)
-		at java.base/java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:140)
-		at org.apache.catalina.core.ContainerBase.stopInternal(ContainerBase.java:986)
-		at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:257)
-		at org.apache.catalina.core.StandardService.stopInternal(StandardService.java:497)
-		at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:257)
-		at org.apache.catalina.core.StandardServer.stopInternal(StandardServer.java:979)
-		at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:257)
-		at org.apache.catalina.startup.Catalina.stop(Catalina.java:872)
-		at org.apache.catalina.startup.Catalina.start(Catalina.java:834)
-		at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-		at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-		at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-		at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-		at org.apache.catalina.startup.Bootstrap.start(Bootstrap.java:345)
-		at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:476)
-17-Feb-2023 14:41:14.612 WARNING [main] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesObjectStreamClassCaches Failed to clear soft references from ObjectStreamClass$Caches for web application [host-manager]
-	java.lang.ClassCastException: class java.io.ObjectStreamClass$Caches$1 cannot be cast to class java.util.Map (java.io.ObjectStreamClass$Caches$1 and java.util.Map are in module java.base of loader 'bootstrap')
-		at org.apache.catalina.loader.WebappClassLoaderBase.clearCache(WebappClassLoaderBase.java:2363)
-		at org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesObjectStreamClassCaches(WebappClassLoaderBase.java:2338)
-		at org.apache.catalina.loader.WebappClassLoaderBase.clearReferences(WebappClassLoaderBase.java:1706)
-		at org.apache.catalina.loader.WebappClassLoaderBase.stop(WebappClassLoaderBase.java:1634)
-		at org.apache.catalina.loader.WebappLoader.stopInternal(WebappLoader.java:429)
-		at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:257)
-		at org.apache.catalina.core.StandardContext.stopInternal(StandardContext.java:5464)
-		at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:257)
-		at org.apache.catalina.core.ContainerBase$StopChild.call(ContainerBase.java:1412)
-		at org.apache.catalina.core.ContainerBase$StopChild.call(ContainerBase.java:1401)
-		at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-		at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75)
-		at java.base/java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:140)
-		at org.apache.catalina.core.ContainerBase.stopInternal(ContainerBase.java:986)
-		at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:257)
-		at org.apache.catalina.core.ContainerBase$StopChild.call(ContainerBase.java:1412)
-		at org.apache.catalina.core.ContainerBase$StopChild.call(ContainerBase.java:1401)
-		at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-		at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75)
-		at java.base/java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:140)
-		at org.apache.catalina.core.ContainerBase.stopInternal(ContainerBase.java:986)
-		at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:257)
-		at org.apache.catalina.core.StandardService.stopInternal(StandardService.java:497)
-		at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:257)
-		at org.apache.catalina.core.StandardServer.stopInternal(StandardServer.java:979)
-		at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:257)
-		at org.apache.catalina.startup.Catalina.stop(Catalina.java:872)
-		at org.apache.catalina.startup.Catalina.start(Catalina.java:834)
-		at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-		at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-		at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-		at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-		at org.apache.catalina.startup.Bootstrap.start(Bootstrap.java:345)
-		at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:476)
-17-Feb-2023 14:41:14.619 WARNING [main] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesObjectStreamClassCaches Failed to clear soft references from ObjectStreamClass$Caches for web application [my_webapp]
-	java.lang.ClassCastException: class java.io.ObjectStreamClass$Caches$1 cannot be cast to class java.util.Map (java.io.ObjectStreamClass$Caches$1 and java.util.Map are in module java.base of loader 'bootstrap')
-		at org.apache.catalina.loader.WebappClassLoaderBase.clearCache(WebappClassLoaderBase.java:2363)
-		at org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesObjectStreamClassCaches(WebappClassLoaderBase.java:2338)
-		at org.apache.catalina.loader.WebappClassLoaderBase.clearReferences(WebappClassLoaderBase.java:1706)
-		at org.apache.catalina.loader.WebappClassLoaderBase.stop(WebappClassLoaderBase.java:1634)
-		at org.apache.catalina.loader.WebappLoader.stopInternal(WebappLoader.java:429)
-		at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:257)
-		at org.apache.catalina.core.StandardContext.stopInternal(StandardContext.java:5464)
-		at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:257)
-		at org.apache.catalina.core.ContainerBase$StopChild.call(ContainerBase.java:1412)
-		at org.apache.catalina.core.ContainerBase$StopChild.call(ContainerBase.java:1401)
-		at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-		at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75)
-		at java.base/java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:140)
-		at org.apache.catalina.core.ContainerBase.stopInternal(ContainerBase.java:986)
-		at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:257)
-		at org.apache.catalina.core.ContainerBase$StopChild.call(ContainerBase.java:1412)
-		at org.apache.catalina.core.ContainerBase$StopChild.call(ContainerBase.java:1401)
-		at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-		at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75)
-		at java.base/java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:140)
-		at org.apache.catalina.core.ContainerBase.stopInternal(ContainerBase.java:986)
-		at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:257)
-		at org.apache.catalina.core.StandardService.stopInternal(StandardService.java:497)
-		at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:257)
-		at org.apache.catalina.core.StandardServer.stopInternal(StandardServer.java:979)
-		at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:257)
-		at org.apache.catalina.startup.Catalina.stop(Catalina.java:872)
-		at org.apache.catalina.startup.Catalina.start(Catalina.java:834)
-		at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-		at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-		at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-		at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-		at org.apache.catalina.startup.Bootstrap.start(Bootstrap.java:345)
-		at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:476)
-17-Feb-2023 14:41:14.622 WARNING [main] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesObjectStreamClassCaches Failed to clear soft references from ObjectStreamClass$Caches for web application [manager]
-	java.lang.ClassCastException: class java.io.ObjectStreamClass$Caches$1 cannot be cast to class java.util.Map (java.io.ObjectStreamClass$Caches$1 and java.util.Map are in module java.base of loader 'bootstrap')
-		at org.apache.catalina.loader.WebappClassLoaderBase.clearCache(WebappClassLoaderBase.java:2363)
-		at org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesObjectStreamClassCaches(WebappClassLoaderBase.java:2338)
-		at org.apache.catalina.loader.WebappClassLoaderBase.clearReferences(WebappClassLoaderBase.java:1706)
-		at org.apache.catalina.loader.WebappClassLoaderBase.stop(WebappClassLoaderBase.java:1634)
-		at org.apache.catalina.loader.WebappLoader.stopInternal(WebappLoader.java:429)
-		at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:257)
-		at org.apache.catalina.core.StandardContext.stopInternal(StandardContext.java:5464)
-		at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:257)
-		at org.apache.catalina.core.ContainerBase$StopChild.call(ContainerBase.java:1412)
-		at org.apache.catalina.core.ContainerBase$StopChild.call(ContainerBase.java:1401)
-		at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-		at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75)
-		at java.base/java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:140)
-		at org.apache.catalina.core.ContainerBase.stopInternal(ContainerBase.java:986)
-		at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:257)
-		at org.apache.catalina.core.ContainerBase$StopChild.call(ContainerBase.java:1412)
-		at org.apache.catalina.core.ContainerBase$StopChild.call(ContainerBase.java:1401)
-		at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-		at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75)
-		at java.base/java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:140)
-		at org.apache.catalina.core.ContainerBase.stopInternal(ContainerBase.java:986)
-		at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:257)
-		at org.apache.catalina.core.StandardService.stopInternal(StandardService.java:497)
-		at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:257)
-		at org.apache.catalina.core.StandardServer.stopInternal(StandardServer.java:979)
-		at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:257)
-		at org.apache.catalina.startup.Catalina.stop(Catalina.java:872)
-		at org.apache.catalina.startup.Catalina.start(Catalina.java:834)
-		at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-		at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-		at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-		at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-		at org.apache.catalina.startup.Bootstrap.start(Bootstrap.java:345)
-		at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:476)
-17-Feb-2023 14:41:14.641 WARNING [main] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesObjectStreamClassCaches Failed to clear soft references from ObjectStreamClass$Caches for web application [docs]
-	java.lang.ClassCastException: class java.io.ObjectStreamClass$Caches$1 cannot be cast to class java.util.Map (java.io.ObjectStreamClass$Caches$1 and java.util.Map are in module java.base of loader 'bootstrap')
-		at org.apache.catalina.loader.WebappClassLoaderBase.clearCache(WebappClassLoaderBase.java:2363)
-		at org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesObjectStreamClassCaches(WebappClassLoaderBase.java:2338)
-		at org.apache.catalina.loader.WebappClassLoaderBase.clearReferences(WebappClassLoaderBase.java:1706)
-		at org.apache.catalina.loader.WebappClassLoaderBase.stop(WebappClassLoaderBase.java:1634)
-		at org.apache.catalina.loader.WebappLoader.stopInternal(WebappLoader.java:429)
-		at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:257)
-		at org.apache.catalina.core.StandardContext.stopInternal(StandardContext.java:5464)
-		at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:257)
-		at org.apache.catalina.core.ContainerBase$StopChild.call(ContainerBase.java:1412)
-		at org.apache.catalina.core.ContainerBase$StopChild.call(ContainerBase.java:1401)
-		at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-		at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75)
-		at java.base/java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:140)
-		at org.apache.catalina.core.ContainerBase.stopInternal(ContainerBase.java:986)
-		at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:257)
-		at org.apache.catalina.core.ContainerBase$StopChild.call(ContainerBase.java:1412)
-		at org.apache.catalina.core.ContainerBase$StopChild.call(ContainerBase.java:1401)
-		at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-		at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75)
-		at java.base/java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:140)
-		at org.apache.catalina.core.ContainerBase.stopInternal(ContainerBase.java:986)
-		at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:257)
-		at org.apache.catalina.core.StandardService.stopInternal(StandardService.java:497)
-		at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:257)
-		at org.apache.catalina.core.StandardServer.stopInternal(StandardServer.java:979)
-		at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:257)
-		at org.apache.catalina.startup.Catalina.stop(Catalina.java:872)
-		at org.apache.catalina.startup.Catalina.start(Catalina.java:834)
-		at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-		at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-		at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-		at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-		at org.apache.catalina.startup.Bootstrap.start(Bootstrap.java:345)
-		at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:476)
-17-Feb-2023 14:41:14.643 INFO [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8080"]
-17-Feb-2023 14:41:14.661 INFO [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-8080"]
-NOTE: Picked up JDK_JAVA_OPTIONS:  --add-opens=java.base/java.lang=ALL-UNNAMED --add-opens=java.base/java.io=ALL-UNNAMED --add-opens=java.base/java.util=ALL-UNNAMED --add-opens=java.base/java.util.concurrent=ALL-UNNAMED --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
-17-Feb-2023 14:41:21.140 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/10.0.10
-17-Feb-2023 14:41:21.160 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Jul 30 2021 09:51:27 UTC
-17-Feb-2023 14:41:21.161 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 10.0.10.0
-17-Feb-2023 14:41:21.161 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Linux
-17-Feb-2023 14:41:21.161 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            5.4.0-125-generic
-17-Feb-2023 14:41:21.162 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
-17-Feb-2023 14:41:21.162 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             /usr/lib/jvm/java-11-openjdk-amd64
-17-Feb-2023 14:41:21.167 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           11.0.17+8-post-Ubuntu-1ubuntu220.04
-17-Feb-2023 14:41:21.167 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Ubuntu
-17-Feb-2023 14:41:21.167 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         /home/alumne/Desktop/pti/servlets/apache-tomcat-10.0.10
-17-Feb-2023 14:41:21.168 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         /home/alumne/Desktop/pti/servlets/apache-tomcat-10.0.10
-17-Feb-2023 14:41:21.222 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.lang=ALL-UNNAMED
-17-Feb-2023 14:41:21.224 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.io=ALL-UNNAMED
-17-Feb-2023 14:41:21.224 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util=ALL-UNNAMED
-17-Feb-2023 14:41:21.227 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util.concurrent=ALL-UNNAMED
-17-Feb-2023 14:41:21.227 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
-17-Feb-2023 14:41:21.228 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=/home/alumne/Desktop/pti/servlets/apache-tomcat-10.0.10/conf/logging.properties
-17-Feb-2023 14:41:21.228 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
-17-Feb-2023 14:41:21.228 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
-17-Feb-2023 14:41:21.231 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
-17-Feb-2023 14:41:21.231 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dorg.apache.catalina.security.SecurityListener.UMASK=0027
-17-Feb-2023 14:41:21.232 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dignore.endorsed.dirs=
-17-Feb-2023 14:41:21.232 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=/home/alumne/Desktop/pti/servlets/apache-tomcat-10.0.10
-17-Feb-2023 14:41:21.232 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=/home/alumne/Desktop/pti/servlets/apache-tomcat-10.0.10
-17-Feb-2023 14:41:21.235 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=/home/alumne/Desktop/pti/servlets/apache-tomcat-10.0.10/temp
-17-Feb-2023 14:41:21.247 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The Apache Tomcat Native library which allows using OpenSSL was not found on the java.library.path: [/usr/java/packages/lib:/usr/lib/x86_64-linux-gnu/jni:/lib/x86_64-linux-gnu:/usr/lib/x86_64-linux-gnu:/usr/lib/jni:/lib:/usr/lib]
-17-Feb-2023 14:41:22.646 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
-17-Feb-2023 14:41:22.701 INFO [main] org.apache.catalina.startup.Catalina.load Server initialization in [2264] milliseconds
-17-Feb-2023 14:41:23.029 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
-17-Feb-2023 14:41:23.039 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet engine: [Apache Tomcat/10.0.10]
-17-Feb-2023 14:41:23.075 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/alumne/Desktop/pti/servlets/apache-tomcat-10.0.10/webapps/ROOT]
-17-Feb-2023 14:41:23.852 WARNING [main] org.apache.catalina.util.SessionIdGeneratorBase.createSecureRandom Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [109] milliseconds.
-17-Feb-2023 14:41:23.881 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/alumne/Desktop/pti/servlets/apache-tomcat-10.0.10/webapps/ROOT] has finished in [806] ms
-17-Feb-2023 14:41:23.881 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/alumne/Desktop/pti/servlets/apache-tomcat-10.0.10/webapps/my_webapp]
-17-Feb-2023 14:41:23.978 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
-17-Feb-2023 14:41:24.004 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/alumne/Desktop/pti/servlets/apache-tomcat-10.0.10/webapps/my_webapp] has finished in [122] ms
-17-Feb-2023 14:41:24.006 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/alumne/Desktop/pti/servlets/apache-tomcat-10.0.10/webapps/manager]
-17-Feb-2023 14:41:24.210 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/alumne/Desktop/pti/servlets/apache-tomcat-10.0.10/webapps/manager] has finished in [204] ms
-17-Feb-2023 14:41:24.212 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/alumne/Desktop/pti/servlets/apache-tomcat-10.0.10/webapps/examples]
-17-Feb-2023 14:41:24.917 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/alumne/Desktop/pti/servlets/apache-tomcat-10.0.10/webapps/examples] has finished in [706] ms
-17-Feb-2023 14:41:24.920 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/alumne/Desktop/pti/servlets/apache-tomcat-10.0.10/webapps/host-manager]
-17-Feb-2023 14:41:24.941 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/alumne/Desktop/pti/servlets/apache-tomcat-10.0.10/webapps/host-manager] has finished in [21] ms
-17-Feb-2023 14:41:24.941 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/alumne/Desktop/pti/servlets/apache-tomcat-10.0.10/webapps/docs]
-17-Feb-2023 14:41:25.003 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/alumne/Desktop/pti/servlets/apache-tomcat-10.0.10/webapps/docs] has finished in [62] ms
-17-Feb-2023 14:41:25.006 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8080"]
-17-Feb-2023 14:41:25.018 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in [2302] milliseconds
-17-Feb-2023 14:42:25.048 INFO [Catalina-utility-1] org.apache.catalina.startup.HostConfig.reload Reloading context [/my_webapp]
-17-Feb-2023 14:42:25.076 INFO [Catalina-utility-1] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/my_webapp] has started
-17-Feb-2023 14:42:25.098 WARNING [Catalina-utility-1] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesObjectStreamClassCaches Failed to clear soft references from ObjectStreamClass$Caches for web application [my_webapp]
-	java.lang.ClassCastException: class java.io.ObjectStreamClass$Caches$1 cannot be cast to class java.util.Map (java.io.ObjectStreamClass$Caches$1 and java.util.Map are in module java.base of loader 'bootstrap')
-		at org.apache.catalina.loader.WebappClassLoaderBase.clearCache(WebappClassLoaderBase.java:2363)
-		at org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesObjectStreamClassCaches(WebappClassLoaderBase.java:2338)
-		at org.apache.catalina.loader.WebappClassLoaderBase.clearReferences(WebappClassLoaderBase.java:1706)
-		at org.apache.catalina.loader.WebappClassLoaderBase.stop(WebappClassLoaderBase.java:1634)
-		at org.apache.catalina.loader.WebappLoader.stopInternal(WebappLoader.java:429)
-		at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:257)
-		at org.apache.catalina.core.StandardContext.stopInternal(StandardContext.java:5464)
-		at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:257)
-		at org.apache.catalina.core.StandardContext.reload(StandardContext.java:3774)
-		at org.apache.catalina.startup.HostConfig.reload(HostConfig.java:1533)
-		at org.apache.catalina.startup.HostConfig.checkResources(HostConfig.java:1505)
-		at org.apache.catalina.startup.HostConfig.check(HostConfig.java:1744)
-		at org.apache.catalina.startup.HostConfig.lifecycleEvent(HostConfig.java:316)
-		at org.apache.catalina.util.LifecycleBase.fireLifecycleEvent(LifecycleBase.java:123)
-		at org.apache.catalina.core.ContainerBase.backgroundProcess(ContainerBase.java:1162)
-		at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.processChildren(ContainerBase.java:1365)
-		at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.processChildren(ContainerBase.java:1369)
-		at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.run(ContainerBase.java:1347)
-		at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
-		at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java:305)
-		at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305)
-		at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
-		at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
-		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
-		at java.base/java.lang.Thread.run(Thread.java:829)
-17-Feb-2023 14:42:25.300 INFO [Catalina-utility-1] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
-17-Feb-2023 14:42:25.313 INFO [Catalina-utility-1] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/my_webapp] is completed
-17-Feb-2023 14:42:31.138 INFO [main] org.apache.catalina.core.StandardServer.await A valid shutdown command was received via the shutdown port. Stopping the Server instance.
-17-Feb-2023 14:42:31.138 INFO [main] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-8080"]
-17-Feb-2023 14:42:31.150 INFO [main] org.apache.catalina.core.StandardService.stopInternal Stopping service [Catalina]
-17-Feb-2023 14:42:31.196 WARNING [main] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesObjectStreamClassCaches Failed to clear soft references from ObjectStreamClass$Caches for web application [ROOT]
-	java.lang.ClassCastException: class java.io.ObjectStreamClass$Caches$1 cannot be cast to class java.util.Map (java.io.ObjectStreamClass$Caches$1 and java.util.Map are in module java.base of loader 'bootstrap')
-		at org.apache.catalina.loader.WebappClassLoaderBase.clearCache(WebappClassLoaderBase.java:2363)
-		at org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesObjectStreamClassCaches(WebappClassLoaderBase.java:2338)
-		at org.apache.catalina.loader.WebappClassLoaderBase.clearReferences(WebappClassLoaderBase.java:1706)
-		at org.apache.catalina.loader.WebappClassLoaderBase.stop(WebappClassLoaderBase.java:1634)
-		at org.apache.catalina.loader.WebappLoader.stopInternal(WebappLoader.java:429)
-		at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:257)
-		at org.apache.catalina.core.StandardContext.stopInternal(StandardContext.java:5464)
-		at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:257)
-		at org.apache.catalina.core.ContainerBase$StopChild.call(ContainerBase.java:1412)
-		at org.apache.catalina.core.ContainerBase$StopChild.call(ContainerBase.java:1401)
-		at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-		at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75)
-		at java.base/java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:140)
-		at org.apache.catalina.core.ContainerBase.stopInternal(ContainerBase.java:986)
-		at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:257)
-		at org.apache.catalina.core.ContainerBase$StopChild.call(ContainerBase.java:1412)
-		at org.apache.catalina.core.ContainerBase$StopChild.call(ContainerBase.java:1401)
-		at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-		at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75)
-		at java.base/java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:140)
-		at org.apache.catalina.core.ContainerBase.stopInternal(ContainerBase.java:986)
-		at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:257)
-		at org.apache.catalina.core.StandardService.stopInternal(StandardService.java:497)
-		at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:257)
-		at org.apache.catalina.core.StandardServer.stopInternal(StandardServer.java:979)
-		at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:257)
-		at org.apache.catalina.startup.Catalina.stop(Catalina.java:872)
-		at org.apache.catalina.startup.Catalina.start(Catalina.java:834)
-		at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-		at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-		at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-		at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-		at org.apache.catalina.startup.Bootstrap.start(Bootstrap.java:345)
-		at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:476)
-17-Feb-2023 14:42:31.208 WARNING [main] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesObjectStreamClassCaches Failed to clear soft references from ObjectStreamClass$Caches for web application [examples]
-	java.lang.ClassCastException: class java.io.ObjectStreamClass$Caches$1 cannot be cast to class java.util.Map (java.io.ObjectStreamClass$Caches$1 and java.util.Map are in module java.base of loader 'bootstrap')
-		at org.apache.catalina.loader.WebappClassLoaderBase.clearCache(WebappClassLoaderBase.java:2363)
-		at org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesObjectStreamClassCaches(WebappClassLoaderBase.java:2338)
-		at org.apache.catalina.loader.WebappClassLoaderBase.clearReferences(WebappClassLoaderBase.java:1706)
-		at org.apache.catalina.loader.WebappClassLoaderBase.stop(WebappClassLoaderBase.java:1634)
-		at org.apache.catalina.loader.WebappLoader.stopInternal(WebappLoader.java:429)
-		at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:257)
-		at org.apache.catalina.core.StandardContext.stopInternal(StandardContext.java:5464)
-		at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:257)
-		at org.apache.catalina.core.ContainerBase$StopChild.call(ContainerBase.java:1412)
-		at org.apache.catalina.core.ContainerBase$StopChild.call(ContainerBase.java:1401)
-		at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-		at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75)
-		at java.base/java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:140)
-		at org.apache.catalina.core.ContainerBase.stopInternal(ContainerBase.java:986)
-		at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:257)
-		at org.apache.catalina.core.ContainerBase$StopChild.call(ContainerBase.java:1412)
-		at org.apache.catalina.core.ContainerBase$StopChild.call(ContainerBase.java:1401)
-		at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-		at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75)
-		at java.base/java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:140)
-		at org.apache.catalina.core.ContainerBase.stopInternal(ContainerBase.java:986)
-		at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:257)
-		at org.apache.catalina.core.StandardService.stopInternal(StandardService.java:497)
-		at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:257)
-		at org.apache.catalina.core.StandardServer.stopInternal(StandardServer.java:979)
-		at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:257)
-		at org.apache.catalina.startup.Catalina.stop(Catalina.java:872)
-		at org.apache.catalina.startup.Catalina.start(Catalina.java:834)
-		at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-		at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-		at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-		at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-		at org.apache.catalina.startup.Bootstrap.start(Bootstrap.java:345)
-		at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:476)
-17-Feb-2023 14:42:31.226 WARNING [main] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesObjectStreamClassCaches Failed to clear soft references from ObjectStreamClass$Caches for web application [host-manager]
-	java.lang.ClassCastException: class java.io.ObjectStreamClass$Caches$1 cannot be cast to class java.util.Map (java.io.ObjectStreamClass$Caches$1 and java.util.Map are in module java.base of loader 'bootstrap')
-		at org.apache.catalina.loader.WebappClassLoaderBase.clearCache(WebappClassLoaderBase.java:2363)
-		at org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesObjectStreamClassCaches(WebappClassLoaderBase.java:2338)
-		at org.apache.catalina.loader.WebappClassLoaderBase.clearReferences(WebappClassLoaderBase.java:1706)
-		at org.apache.catalina.loader.WebappClassLoaderBase.stop(WebappClassLoaderBase.java:1634)
-		at org.apache.catalina.loader.WebappLoader.stopInternal(WebappLoader.java:429)
-		at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:257)
-		at org.apache.catalina.core.StandardContext.stopInternal(StandardContext.java:5464)
-		at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:257)
-		at org.apache.catalina.core.ContainerBase$StopChild.call(ContainerBase.java:1412)
-		at org.apache.catalina.core.ContainerBase$StopChild.call(ContainerBase.java:1401)
-		at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-		at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75)
-		at java.base/java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:140)
-		at org.apache.catalina.core.ContainerBase.stopInternal(ContainerBase.java:986)
-		at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:257)
-		at org.apache.catalina.core.ContainerBase$StopChild.call(ContainerBase.java:1412)
-		at org.apache.catalina.core.ContainerBase$StopChild.call(ContainerBase.java:1401)
-		at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-		at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75)
-		at java.base/java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:140)
-		at org.apache.catalina.core.ContainerBase.stopInternal(ContainerBase.java:986)
-		at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:257)
-		at org.apache.catalina.core.StandardService.stopInternal(StandardService.java:497)
-		at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:257)
-		at org.apache.catalina.core.StandardServer.stopInternal(StandardServer.java:979)
-		at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:257)
-		at org.apache.catalina.startup.Catalina.stop(Catalina.java:872)
-		at org.apache.catalina.startup.Catalina.start(Catalina.java:834)
-		at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-		at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-		at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-		at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-		at org.apache.catalina.startup.Bootstrap.start(Bootstrap.java:345)
-		at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:476)
-17-Feb-2023 14:42:31.249 WARNING [main] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesObjectStreamClassCaches Failed to clear soft references from ObjectStreamClass$Caches for web application [my_webapp]
-	java.lang.ClassCastException: class java.io.ObjectStreamClass$Caches$1 cannot be cast to class java.util.Map (java.io.ObjectStreamClass$Caches$1 and java.util.Map are in module java.base of loader 'bootstrap')
-		at org.apache.catalina.loader.WebappClassLoaderBase.clearCache(WebappClassLoaderBase.java:2363)
-		at org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesObjectStreamClassCaches(WebappClassLoaderBase.java:2338)
-		at org.apache.catalina.loader.WebappClassLoaderBase.clearReferences(WebappClassLoaderBase.java:1706)
-		at org.apache.catalina.loader.WebappClassLoaderBase.stop(WebappClassLoaderBase.java:1634)
-		at org.apache.catalina.loader.WebappLoader.stopInternal(WebappLoader.java:429)
-		at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:257)
-		at org.apache.catalina.core.StandardContext.stopInternal(StandardContext.java:5464)
-		at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:257)
-		at org.apache.catalina.core.ContainerBase$StopChild.call(ContainerBase.java:1412)
-		at org.apache.catalina.core.ContainerBase$StopChild.call(ContainerBase.java:1401)
-		at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-		at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75)
-		at java.base/java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:140)
-		at org.apache.catalina.core.ContainerBase.stopInternal(ContainerBase.java:986)
-		at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:257)
-		at org.apache.catalina.core.ContainerBase$StopChild.call(ContainerBase.java:1412)
-		at org.apache.catalina.core.ContainerBase$StopChild.call(ContainerBase.java:1401)
-		at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-		at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75)
-		at java.base/java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:140)
-		at org.apache.catalina.core.ContainerBase.stopInternal(ContainerBase.java:986)
-		at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:257)
-		at org.apache.catalina.core.StandardService.stopInternal(StandardService.java:497)
-		at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:257)
-		at org.apache.catalina.core.StandardServer.stopInternal(StandardServer.java:979)
-		at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:257)
-		at org.apache.catalina.startup.Catalina.stop(Catalina.java:872)
-		at org.apache.catalina.startup.Catalina.start(Catalina.java:834)
-		at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-		at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-		at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-		at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-		at org.apache.catalina.startup.Bootstrap.start(Bootstrap.java:345)
-		at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:476)
-17-Feb-2023 14:42:31.262 WARNING [main] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesObjectStreamClassCaches Failed to clear soft references from ObjectStreamClass$Caches for web application [manager]
-	java.lang.ClassCastException: class java.io.ObjectStreamClass$Caches$1 cannot be cast to class java.util.Map (java.io.ObjectStreamClass$Caches$1 and java.util.Map are in module java.base of loader 'bootstrap')
-		at org.apache.catalina.loader.WebappClassLoaderBase.clearCache(WebappClassLoaderBase.java:2363)
-		at org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesObjectStreamClassCaches(WebappClassLoaderBase.java:2338)
-		at org.apache.catalina.loader.WebappClassLoaderBase.clearReferences(WebappClassLoaderBase.java:1706)
-		at org.apache.catalina.loader.WebappClassLoaderBase.stop(WebappClassLoaderBase.java:1634)
-		at org.apache.catalina.loader.WebappLoader.stopInternal(WebappLoader.java:429)
-		at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:257)
-		at org.apache.catalina.core.StandardContext.stopInternal(StandardContext.java:5464)
-		at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:257)
-		at org.apache.catalina.core.ContainerBase$StopChild.call(ContainerBase.java:1412)
-		at org.apache.catalina.core.ContainerBase$StopChild.call(ContainerBase.java:1401)
-		at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-		at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75)
-		at java.base/java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:140)
-		at org.apache.catalina.core.ContainerBase.stopInternal(ContainerBase.java:986)
-		at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:257)
-		at org.apache.catalina.core.ContainerBase$StopChild.call(ContainerBase.java:1412)
-		at org.apache.catalina.core.ContainerBase$StopChild.call(ContainerBase.java:1401)
-		at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-		at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75)
-		at java.base/java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:140)
-		at org.apache.catalina.core.ContainerBase.stopInternal(ContainerBase.java:986)
-		at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:257)
-		at org.apache.catalina.core.StandardService.stopInternal(StandardService.java:497)
-		at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:257)
-		at org.apache.catalina.core.StandardServer.stopInternal(StandardServer.java:979)
-		at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:257)
-		at org.apache.catalina.startup.Catalina.stop(Catalina.java:872)
-		at org.apache.catalina.startup.Catalina.start(Catalina.java:834)
-		at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-		at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-		at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-		at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-		at org.apache.catalina.startup.Bootstrap.start(Bootstrap.java:345)
-		at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:476)
-17-Feb-2023 14:42:31.265 WARNING [main] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesObjectStreamClassCaches Failed to clear soft references from ObjectStreamClass$Caches for web application [docs]
-	java.lang.ClassCastException: class java.io.ObjectStreamClass$Caches$1 cannot be cast to class java.util.Map (java.io.ObjectStreamClass$Caches$1 and java.util.Map are in module java.base of loader 'bootstrap')
-		at org.apache.catalina.loader.WebappClassLoaderBase.clearCache(WebappClassLoaderBase.java:2363)
-		at org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesObjectStreamClassCaches(WebappClassLoaderBase.java:2338)
-		at org.apache.catalina.loader.WebappClassLoaderBase.clearReferences(WebappClassLoaderBase.java:1706)
-		at org.apache.catalina.loader.WebappClassLoaderBase.stop(WebappClassLoaderBase.java:1634)
-		at org.apache.catalina.loader.WebappLoader.stopInternal(WebappLoader.java:429)
-		at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:257)
-		at org.apache.catalina.core.StandardContext.stopInternal(StandardContext.java:5464)
-		at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:257)
-		at org.apache.catalina.core.ContainerBase$StopChild.call(ContainerBase.java:1412)
-		at org.apache.catalina.core.ContainerBase$StopChild.call(ContainerBase.java:1401)
-		at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-		at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75)
-		at java.base/java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:140)
-		at org.apache.catalina.core.ContainerBase.stopInternal(ContainerBase.java:986)
-		at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:257)
-		at org.apache.catalina.core.ContainerBase$StopChild.call(ContainerBase.java:1412)
-		at org.apache.catalina.core.ContainerBase$StopChild.call(ContainerBase.java:1401)
-		at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-		at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75)
-		at java.base/java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:140)
-		at org.apache.catalina.core.ContainerBase.stopInternal(ContainerBase.java:986)
-		at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:257)
-		at org.apache.catalina.core.StandardService.stopInternal(StandardService.java:497)
-		at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:257)
-		at org.apache.catalina.core.StandardServer.stopInternal(StandardServer.java:979)
-		at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:257)
-		at org.apache.catalina.startup.Catalina.stop(Catalina.java:872)
-		at org.apache.catalina.startup.Catalina.start(Catalina.java:834)
-		at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-		at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-		at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-		at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-		at org.apache.catalina.startup.Bootstrap.start(Bootstrap.java:345)
-		at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:476)
-17-Feb-2023 14:42:31.266 INFO [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8080"]
-17-Feb-2023 14:42:31.310 INFO [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-8080"]
-NOTE: Picked up JDK_JAVA_OPTIONS:  --add-opens=java.base/java.lang=ALL-UNNAMED --add-opens=java.base/java.io=ALL-UNNAMED --add-opens=java.base/java.util=ALL-UNNAMED --add-opens=java.base/java.util.concurrent=ALL-UNNAMED --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
-17-Feb-2023 14:42:34.923 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/10.0.10
-17-Feb-2023 14:42:34.966 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Jul 30 2021 09:51:27 UTC
-17-Feb-2023 14:42:34.966 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 10.0.10.0
-17-Feb-2023 14:42:34.966 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Linux
-17-Feb-2023 14:42:34.966 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            5.4.0-125-generic
-17-Feb-2023 14:42:34.966 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
-17-Feb-2023 14:42:34.966 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             /usr/lib/jvm/java-11-openjdk-amd64
-17-Feb-2023 14:42:34.967 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           11.0.17+8-post-Ubuntu-1ubuntu220.04
-17-Feb-2023 14:42:34.967 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Ubuntu
-17-Feb-2023 14:42:34.967 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         /home/alumne/Desktop/pti/servlets/apache-tomcat-10.0.10
-17-Feb-2023 14:42:34.967 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         /home/alumne/Desktop/pti/servlets/apache-tomcat-10.0.10
-17-Feb-2023 14:42:34.986 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.lang=ALL-UNNAMED
-17-Feb-2023 14:42:34.987 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.io=ALL-UNNAMED
-17-Feb-2023 14:42:34.987 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util=ALL-UNNAMED
-17-Feb-2023 14:42:34.987 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util.concurrent=ALL-UNNAMED
-17-Feb-2023 14:42:34.987 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
-17-Feb-2023 14:42:34.990 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=/home/alumne/Desktop/pti/servlets/apache-tomcat-10.0.10/conf/logging.properties
-17-Feb-2023 14:42:34.990 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
-17-Feb-2023 14:42:34.990 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
-17-Feb-2023 14:42:34.995 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
-17-Feb-2023 14:42:34.995 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dorg.apache.catalina.security.SecurityListener.UMASK=0027
-17-Feb-2023 14:42:34.995 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dignore.endorsed.dirs=
-17-Feb-2023 14:42:34.995 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=/home/alumne/Desktop/pti/servlets/apache-tomcat-10.0.10
-17-Feb-2023 14:42:34.995 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=/home/alumne/Desktop/pti/servlets/apache-tomcat-10.0.10
-17-Feb-2023 14:42:34.996 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=/home/alumne/Desktop/pti/servlets/apache-tomcat-10.0.10/temp
-17-Feb-2023 14:42:34.998 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The Apache Tomcat Native library which allows using OpenSSL was not found on the java.library.path: [/usr/java/packages/lib:/usr/lib/x86_64-linux-gnu/jni:/lib/x86_64-linux-gnu:/usr/lib/x86_64-linux-gnu:/usr/lib/jni:/lib:/usr/lib]
-17-Feb-2023 14:42:35.961 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
-17-Feb-2023 14:42:36.008 INFO [main] org.apache.catalina.startup.Catalina.load Server initialization in [1757] milliseconds
-17-Feb-2023 14:42:36.153 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
-17-Feb-2023 14:42:36.158 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet engine: [Apache Tomcat/10.0.10]
-17-Feb-2023 14:42:36.178 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/alumne/Desktop/pti/servlets/apache-tomcat-10.0.10/webapps/ROOT]
-17-Feb-2023 14:42:36.872 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/alumne/Desktop/pti/servlets/apache-tomcat-10.0.10/webapps/ROOT] has finished in [690] ms
-17-Feb-2023 14:42:36.873 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/alumne/Desktop/pti/servlets/apache-tomcat-10.0.10/webapps/my_webapp]
-17-Feb-2023 14:42:37.047 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
-17-Feb-2023 14:42:37.064 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/alumne/Desktop/pti/servlets/apache-tomcat-10.0.10/webapps/my_webapp] has finished in [191] ms
-17-Feb-2023 14:42:37.064 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/alumne/Desktop/pti/servlets/apache-tomcat-10.0.10/webapps/manager]
-17-Feb-2023 14:42:37.140 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/alumne/Desktop/pti/servlets/apache-tomcat-10.0.10/webapps/manager] has finished in [76] ms
-17-Feb-2023 14:42:37.140 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/alumne/Desktop/pti/servlets/apache-tomcat-10.0.10/webapps/examples]
-17-Feb-2023 14:42:37.696 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/alumne/Desktop/pti/servlets/apache-tomcat-10.0.10/webapps/examples] has finished in [555] ms
-17-Feb-2023 14:42:37.696 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/alumne/Desktop/pti/servlets/apache-tomcat-10.0.10/webapps/host-manager]
-17-Feb-2023 14:42:37.747 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/alumne/Desktop/pti/servlets/apache-tomcat-10.0.10/webapps/host-manager] has finished in [50] ms
-17-Feb-2023 14:42:37.747 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/alumne/Desktop/pti/servlets/apache-tomcat-10.0.10/webapps/docs]
-17-Feb-2023 14:42:37.799 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/alumne/Desktop/pti/servlets/apache-tomcat-10.0.10/webapps/docs] has finished in [52] ms
-17-Feb-2023 14:42:37.803 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8080"]
-17-Feb-2023 14:42:37.811 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in [1796] milliseconds
-17-Feb-2023 14:43:57.888 INFO [Catalina-utility-2] org.apache.catalina.startup.HostConfig.reload Reloading context [/my_webapp]
-17-Feb-2023 14:43:57.889 INFO [Catalina-utility-2] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/my_webapp] has started
-17-Feb-2023 14:43:57.907 WARNING [Catalina-utility-2] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesObjectStreamClassCaches Failed to clear soft references from ObjectStreamClass$Caches for web application [my_webapp]
-	java.lang.ClassCastException: class java.io.ObjectStreamClass$Caches$1 cannot be cast to class java.util.Map (java.io.ObjectStreamClass$Caches$1 and java.util.Map are in module java.base of loader 'bootstrap')
-		at org.apache.catalina.loader.WebappClassLoaderBase.clearCache(WebappClassLoaderBase.java:2363)
-		at org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesObjectStreamClassCaches(WebappClassLoaderBase.java:2338)
-		at org.apache.catalina.loader.WebappClassLoaderBase.clearReferences(WebappClassLoaderBase.java:1706)
-		at org.apache.catalina.loader.WebappClassLoaderBase.stop(WebappClassLoaderBase.java:1634)
-		at org.apache.catalina.loader.WebappLoader.stopInternal(WebappLoader.java:429)
-		at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:257)
-		at org.apache.catalina.core.StandardContext.stopInternal(StandardContext.java:5464)
-		at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:257)
-		at org.apache.catalina.core.StandardContext.reload(StandardContext.java:3774)
-		at org.apache.catalina.startup.HostConfig.reload(HostConfig.java:1533)
-		at org.apache.catalina.startup.HostConfig.checkResources(HostConfig.java:1505)
-		at org.apache.catalina.startup.HostConfig.check(HostConfig.java:1744)
-		at org.apache.catalina.startup.HostConfig.lifecycleEvent(HostConfig.java:316)
-		at org.apache.catalina.util.LifecycleBase.fireLifecycleEvent(LifecycleBase.java:123)
-		at org.apache.catalina.core.ContainerBase.backgroundProcess(ContainerBase.java:1162)
-		at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.processChildren(ContainerBase.java:1365)
-		at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.processChildren(ContainerBase.java:1369)
-		at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.run(ContainerBase.java:1347)
-		at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
-		at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java:305)
-		at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305)
-		at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
-		at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
-		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
-		at java.base/java.lang.Thread.run(Thread.java:829)
-17-Feb-2023 14:43:57.997 INFO [Catalina-utility-2] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
-17-Feb-2023 14:43:58.007 INFO [Catalina-utility-2] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/my_webapp] is completed
-NOTE: Picked up JDK_JAVA_OPTIONS:  --add-opens=java.base/java.lang=ALL-UNNAMED --add-opens=java.base/java.io=ALL-UNNAMED --add-opens=java.base/java.util=ALL-UNNAMED --add-opens=java.base/java.util.concurrent=ALL-UNNAMED --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
 19-Feb-2023 15:53:45.784 INFORMACIÓN [main] org.apache.catalina.startup.VersionLoggerListener.log Nombre de la versión del servidor: Apache Tomcat/10.0.10
 19-Feb-2023 15:53:45.789 INFORMACIÓN [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:                      Jul 30 2021 09:51:27 UTC
 19-Feb-2023 15:53:45.790 INFORMACIÓN [main] org.apache.catalina.startup.VersionLoggerListener.log Número de versión de servidor:     10.0.10.0
@@ -909,7 +265,6 @@ NOTE: Picked up JDK_JAVA_OPTIONS:  --add-opens=java.base/java.lang=ALL-UNNAMED -
 		at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:476)
 19-Feb-2023 16:24:53.477 INFORMACIÓN [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8080"]
 19-Feb-2023 16:24:53.498 INFORMACIÓN [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-8080"]
-NOTE: Picked up JDK_JAVA_OPTIONS:  --add-opens=java.base/java.lang=ALL-UNNAMED --add-opens=java.base/java.io=ALL-UNNAMED --add-opens=java.base/java.util=ALL-UNNAMED --add-opens=java.base/java.util.concurrent=ALL-UNNAMED --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
 19-Feb-2023 16:25:00.000 INFORMACIÓN [main] org.apache.catalina.startup.VersionLoggerListener.log Nombre de la versión del servidor: Apache Tomcat/10.0.10
 19-Feb-2023 16:25:00.002 INFORMACIÓN [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:                      Jul 30 2021 09:51:27 UTC
 19-Feb-2023 16:25:00.002 INFORMACIÓN [main] org.apache.catalina.startup.VersionLoggerListener.log Número de versión de servidor:     10.0.10.0
@@ -2045,7 +1400,6 @@ NOTE: Picked up JDK_JAVA_OPTIONS:  --add-opens=java.base/java.lang=ALL-UNNAMED -
 19-Feb-2023 16:27:56.820 INFORMACIÓN [main] org.apache.catalina.core.StandardService.stopInternal Parando servicio [Catalina]
 19-Feb-2023 16:27:56.820 INFORMACIÓN [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8080"]
 19-Feb-2023 16:27:56.868 INFORMACIÓN [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-8080"]
-NOTE: Picked up JDK_JAVA_OPTIONS:  --add-opens=java.base/java.lang=ALL-UNNAMED --add-opens=java.base/java.io=ALL-UNNAMED --add-opens=java.base/java.util=ALL-UNNAMED --add-opens=java.base/java.util.concurrent=ALL-UNNAMED --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
 19-Feb-2023 16:28:01.114 INFORMACIÓN [main] org.apache.catalina.startup.VersionLoggerListener.log Nombre de la versión del servidor: Apache Tomcat/10.0.10
 19-Feb-2023 16:28:01.117 INFORMACIÓN [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:                      Jul 30 2021 09:51:27 UTC
 19-Feb-2023 16:28:01.117 INFORMACIÓN [main] org.apache.catalina.startup.VersionLoggerListener.log Número de versión de servidor:     10.0.10.0
@@ -3234,7 +2588,6 @@ NOTE: Picked up JDK_JAVA_OPTIONS:  --add-opens=java.base/java.lang=ALL-UNNAMED -
 19-Feb-2023 16:29:54.735 INFORMACIÓN [main] org.apache.catalina.core.StandardService.stopInternal Parando servicio [Catalina]
 19-Feb-2023 16:29:54.735 INFORMACIÓN [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8080"]
 19-Feb-2023 16:29:54.782 INFORMACIÓN [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-8080"]
-NOTE: Picked up JDK_JAVA_OPTIONS:  --add-opens=java.base/java.lang=ALL-UNNAMED --add-opens=java.base/java.io=ALL-UNNAMED --add-opens=java.base/java.util=ALL-UNNAMED --add-opens=java.base/java.util.concurrent=ALL-UNNAMED --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
 19-Feb-2023 16:30:07.137 INFORMACIÓN [main] org.apache.catalina.startup.VersionLoggerListener.log Nombre de la versión del servidor: Apache Tomcat/10.0.10
 19-Feb-2023 16:30:07.139 INFORMACIÓN [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:                      Jul 30 2021 09:51:27 UTC
 19-Feb-2023 16:30:07.140 INFORMACIÓN [main] org.apache.catalina.startup.VersionLoggerListener.log Número de versión de servidor:     10.0.10.0
@@ -4658,7 +4011,6 @@ NOTE: Picked up JDK_JAVA_OPTIONS:  --add-opens=java.base/java.lang=ALL-UNNAMED -
 		at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:476)
 19-Feb-2023 16:35:31.417 INFORMACIÓN [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8080"]
 19-Feb-2023 16:35:31.455 INFORMACIÓN [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-8080"]
-NOTE: Picked up JDK_JAVA_OPTIONS:  --add-opens=java.base/java.lang=ALL-UNNAMED --add-opens=java.base/java.io=ALL-UNNAMED --add-opens=java.base/java.util=ALL-UNNAMED --add-opens=java.base/java.util.concurrent=ALL-UNNAMED --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
 19-Feb-2023 16:35:38.058 INFORMACIÓN [main] org.apache.catalina.startup.VersionLoggerListener.log Nombre de la versión del servidor: Apache Tomcat/10.0.10
 19-Feb-2023 16:35:38.061 INFORMACIÓN [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:                      Jul 30 2021 09:51:27 UTC
 19-Feb-2023 16:35:38.061 INFORMACIÓN [main] org.apache.catalina.startup.VersionLoggerListener.log Número de versión de servidor:     10.0.10.0
@@ -4926,7 +4278,6 @@ NOTE: Picked up JDK_JAVA_OPTIONS:  --add-opens=java.base/java.lang=ALL-UNNAMED -
 		at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:476)
 19-Feb-2023 16:40:59.969 INFORMACIÓN [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8080"]
 19-Feb-2023 16:40:59.997 INFORMACIÓN [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-8080"]
-NOTE: Picked up JDK_JAVA_OPTIONS:  --add-opens=java.base/java.lang=ALL-UNNAMED --add-opens=java.base/java.io=ALL-UNNAMED --add-opens=java.base/java.util=ALL-UNNAMED --add-opens=java.base/java.util.concurrent=ALL-UNNAMED --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
 19-Feb-2023 16:41:01.892 INFORMACIÓN [main] org.apache.catalina.startup.VersionLoggerListener.log Nombre de la versión del servidor: Apache Tomcat/10.0.10
 19-Feb-2023 16:41:01.895 INFORMACIÓN [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:                      Jul 30 2021 09:51:27 UTC
 19-Feb-2023 16:41:01.895 INFORMACIÓN [main] org.apache.catalina.startup.VersionLoggerListener.log Número de versión de servidor:     10.0.10.0
@@ -5194,7 +4545,6 @@ NOTE: Picked up JDK_JAVA_OPTIONS:  --add-opens=java.base/java.lang=ALL-UNNAMED -
 		at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:476)
 19-Feb-2023 16:58:37.014 INFORMACIÓN [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8080"]
 19-Feb-2023 16:58:37.035 INFORMACIÓN [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-8080"]
-NOTE: Picked up JDK_JAVA_OPTIONS:  --add-opens=java.base/java.lang=ALL-UNNAMED --add-opens=java.base/java.io=ALL-UNNAMED --add-opens=java.base/java.util=ALL-UNNAMED --add-opens=java.base/java.util.concurrent=ALL-UNNAMED --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
 19-Feb-2023 16:58:40.586 INFORMACIÓN [main] org.apache.catalina.startup.VersionLoggerListener.log Nombre de la versión del servidor: Apache Tomcat/10.0.10
 19-Feb-2023 16:58:40.592 INFORMACIÓN [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:                      Jul 30 2021 09:51:27 UTC
 19-Feb-2023 16:58:40.592 INFORMACIÓN [main] org.apache.catalina.startup.VersionLoggerListener.log Número de versión de servidor:     10.0.10.0
@@ -5462,7 +4812,6 @@ NOTE: Picked up JDK_JAVA_OPTIONS:  --add-opens=java.base/java.lang=ALL-UNNAMED -
 		at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:476)
 19-Feb-2023 17:00:10.839 INFORMACIÓN [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8080"]
 19-Feb-2023 17:00:10.872 INFORMACIÓN [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-8080"]
-NOTE: Picked up JDK_JAVA_OPTIONS:  --add-opens=java.base/java.lang=ALL-UNNAMED --add-opens=java.base/java.io=ALL-UNNAMED --add-opens=java.base/java.util=ALL-UNNAMED --add-opens=java.base/java.util.concurrent=ALL-UNNAMED --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
 19-Feb-2023 17:00:12.730 INFORMACIÓN [main] org.apache.catalina.startup.VersionLoggerListener.log Nombre de la versión del servidor: Apache Tomcat/10.0.10
 19-Feb-2023 17:00:12.732 INFORMACIÓN [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:                      Jul 30 2021 09:51:27 UTC
 19-Feb-2023 17:00:12.733 INFORMACIÓN [main] org.apache.catalina.startup.VersionLoggerListener.log Número de versión de servidor:     10.0.10.0
@@ -5730,7 +5079,6 @@ NOTE: Picked up JDK_JAVA_OPTIONS:  --add-opens=java.base/java.lang=ALL-UNNAMED -
 		at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:476)
 19-Feb-2023 17:01:31.716 INFORMACIÓN [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8080"]
 19-Feb-2023 17:01:31.746 INFORMACIÓN [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-8080"]
-NOTE: Picked up JDK_JAVA_OPTIONS:  --add-opens=java.base/java.lang=ALL-UNNAMED --add-opens=java.base/java.io=ALL-UNNAMED --add-opens=java.base/java.util=ALL-UNNAMED --add-opens=java.base/java.util.concurrent=ALL-UNNAMED --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
 19-Feb-2023 17:01:33.630 INFORMACIÓN [main] org.apache.catalina.startup.VersionLoggerListener.log Nombre de la versión del servidor: Apache Tomcat/10.0.10
 19-Feb-2023 17:01:33.634 INFORMACIÓN [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:                      Jul 30 2021 09:51:27 UTC
 19-Feb-2023 17:01:33.634 INFORMACIÓN [main] org.apache.catalina.startup.VersionLoggerListener.log Número de versión de servidor:     10.0.10.0
@@ -5998,7 +5346,6 @@ NOTE: Picked up JDK_JAVA_OPTIONS:  --add-opens=java.base/java.lang=ALL-UNNAMED -
 		at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:476)
 19-Feb-2023 17:02:20.237 INFORMACIÓN [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8080"]
 19-Feb-2023 17:02:20.261 INFORMACIÓN [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-8080"]
-NOTE: Picked up JDK_JAVA_OPTIONS:  --add-opens=java.base/java.lang=ALL-UNNAMED --add-opens=java.base/java.io=ALL-UNNAMED --add-opens=java.base/java.util=ALL-UNNAMED --add-opens=java.base/java.util.concurrent=ALL-UNNAMED --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
 19-Feb-2023 17:02:25.089 INFORMACIÓN [main] org.apache.catalina.startup.VersionLoggerListener.log Nombre de la versión del servidor: Apache Tomcat/10.0.10
 19-Feb-2023 17:02:25.093 INFORMACIÓN [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:                      Jul 30 2021 09:51:27 UTC
 19-Feb-2023 17:02:25.093 INFORMACIÓN [main] org.apache.catalina.startup.VersionLoggerListener.log Número de versión de servidor:     10.0.10.0
@@ -6266,7 +5613,6 @@ NOTE: Picked up JDK_JAVA_OPTIONS:  --add-opens=java.base/java.lang=ALL-UNNAMED -
 		at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:476)
 19-Feb-2023 17:07:00.933 INFORMACIÓN [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8080"]
 19-Feb-2023 17:07:00.965 INFORMACIÓN [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-8080"]
-NOTE: Picked up JDK_JAVA_OPTIONS:  --add-opens=java.base/java.lang=ALL-UNNAMED --add-opens=java.base/java.io=ALL-UNNAMED --add-opens=java.base/java.util=ALL-UNNAMED --add-opens=java.base/java.util.concurrent=ALL-UNNAMED --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
 19-Feb-2023 17:07:02.709 INFORMACIÓN [main] org.apache.catalina.startup.VersionLoggerListener.log Nombre de la versión del servidor: Apache Tomcat/10.0.10
 19-Feb-2023 17:07:02.712 INFORMACIÓN [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:                      Jul 30 2021 09:51:27 UTC
 19-Feb-2023 17:07:02.712 INFORMACIÓN [main] org.apache.catalina.startup.VersionLoggerListener.log Número de versión de servidor:     10.0.10.0
@@ -6534,7 +5880,6 @@ NOTE: Picked up JDK_JAVA_OPTIONS:  --add-opens=java.base/java.lang=ALL-UNNAMED -
 		at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:476)
 19-Feb-2023 17:18:29.874 INFORMACIÓN [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8080"]
 19-Feb-2023 17:18:29.901 INFORMACIÓN [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-8080"]
-NOTE: Picked up JDK_JAVA_OPTIONS:  --add-opens=java.base/java.lang=ALL-UNNAMED --add-opens=java.base/java.io=ALL-UNNAMED --add-opens=java.base/java.util=ALL-UNNAMED --add-opens=java.base/java.util.concurrent=ALL-UNNAMED --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
 19-Feb-2023 17:18:31.828 INFORMACIÓN [main] org.apache.catalina.startup.VersionLoggerListener.log Nombre de la versión del servidor: Apache Tomcat/10.0.10
 19-Feb-2023 17:18:31.831 INFORMACIÓN [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:                      Jul 30 2021 09:51:27 UTC
 19-Feb-2023 17:18:31.831 INFORMACIÓN [main] org.apache.catalina.startup.VersionLoggerListener.log Número de versión de servidor:     10.0.10.0
@@ -6802,7 +6147,6 @@ NOTE: Picked up JDK_JAVA_OPTIONS:  --add-opens=java.base/java.lang=ALL-UNNAMED -
 		at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:476)
 19-Feb-2023 17:19:02.141 INFORMACIÓN [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8080"]
 19-Feb-2023 17:19:02.170 INFORMACIÓN [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-8080"]
-NOTE: Picked up JDK_JAVA_OPTIONS:  --add-opens=java.base/java.lang=ALL-UNNAMED --add-opens=java.base/java.io=ALL-UNNAMED --add-opens=java.base/java.util=ALL-UNNAMED --add-opens=java.base/java.util.concurrent=ALL-UNNAMED --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
 19-Feb-2023 17:19:06.536 INFORMACIÓN [main] org.apache.catalina.startup.VersionLoggerListener.log Nombre de la versión del servidor: Apache Tomcat/10.0.10
 19-Feb-2023 17:19:06.540 INFORMACIÓN [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:                      Jul 30 2021 09:51:27 UTC
 19-Feb-2023 17:19:06.540 INFORMACIÓN [main] org.apache.catalina.startup.VersionLoggerListener.log Número de versión de servidor:     10.0.10.0
@@ -7070,7 +6414,6 @@ NOTE: Picked up JDK_JAVA_OPTIONS:  --add-opens=java.base/java.lang=ALL-UNNAMED -
 		at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:476)
 19-Feb-2023 17:21:08.125 INFORMACIÓN [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8080"]
 19-Feb-2023 17:21:08.151 INFORMACIÓN [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-8080"]
-NOTE: Picked up JDK_JAVA_OPTIONS:  --add-opens=java.base/java.lang=ALL-UNNAMED --add-opens=java.base/java.io=ALL-UNNAMED --add-opens=java.base/java.util=ALL-UNNAMED --add-opens=java.base/java.util.concurrent=ALL-UNNAMED --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
 19-Feb-2023 17:21:10.276 INFORMACIÓN [main] org.apache.catalina.startup.VersionLoggerListener.log Nombre de la versión del servidor: Apache Tomcat/10.0.10
 19-Feb-2023 17:21:10.279 INFORMACIÓN [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:                      Jul 30 2021 09:51:27 UTC
 19-Feb-2023 17:21:10.280 INFORMACIÓN [main] org.apache.catalina.startup.VersionLoggerListener.log Número de versión de servidor:     10.0.10.0
@@ -7338,7 +6681,6 @@ NOTE: Picked up JDK_JAVA_OPTIONS:  --add-opens=java.base/java.lang=ALL-UNNAMED -
 		at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:476)
 19-Feb-2023 17:24:27.242 INFORMACIÓN [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8080"]
 19-Feb-2023 17:24:27.274 INFORMACIÓN [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-8080"]
-NOTE: Picked up JDK_JAVA_OPTIONS:  --add-opens=java.base/java.lang=ALL-UNNAMED --add-opens=java.base/java.io=ALL-UNNAMED --add-opens=java.base/java.util=ALL-UNNAMED --add-opens=java.base/java.util.concurrent=ALL-UNNAMED --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
 19-Feb-2023 17:24:29.432 INFORMACIÓN [main] org.apache.catalina.startup.VersionLoggerListener.log Nombre de la versión del servidor: Apache Tomcat/10.0.10
 19-Feb-2023 17:24:29.435 INFORMACIÓN [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:                      Jul 30 2021 09:51:27 UTC
 19-Feb-2023 17:24:29.435 INFORMACIÓN [main] org.apache.catalina.startup.VersionLoggerListener.log Número de versión de servidor:     10.0.10.0
@@ -7606,7 +6948,6 @@ NOTE: Picked up JDK_JAVA_OPTIONS:  --add-opens=java.base/java.lang=ALL-UNNAMED -
 		at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:476)
 19-Feb-2023 17:32:42.152 INFORMACIÓN [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8080"]
 19-Feb-2023 17:32:42.170 INFORMACIÓN [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-8080"]
-NOTE: Picked up JDK_JAVA_OPTIONS:  --add-opens=java.base/java.lang=ALL-UNNAMED --add-opens=java.base/java.io=ALL-UNNAMED --add-opens=java.base/java.util=ALL-UNNAMED --add-opens=java.base/java.util.concurrent=ALL-UNNAMED --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
 19-Feb-2023 17:32:44.457 INFORMACIÓN [main] org.apache.catalina.startup.VersionLoggerListener.log Nombre de la versión del servidor: Apache Tomcat/10.0.10
 19-Feb-2023 17:32:44.463 INFORMACIÓN [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:                      Jul 30 2021 09:51:27 UTC
 19-Feb-2023 17:32:44.463 INFORMACIÓN [main] org.apache.catalina.startup.VersionLoggerListener.log Número de versión de servidor:     10.0.10.0
@@ -7874,7 +7215,6 @@ NOTE: Picked up JDK_JAVA_OPTIONS:  --add-opens=java.base/java.lang=ALL-UNNAMED -
 		at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:476)
 19-Feb-2023 17:34:38.120 INFORMACIÓN [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8080"]
 19-Feb-2023 17:34:38.144 INFORMACIÓN [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-8080"]
-NOTE: Picked up JDK_JAVA_OPTIONS:  --add-opens=java.base/java.lang=ALL-UNNAMED --add-opens=java.base/java.io=ALL-UNNAMED --add-opens=java.base/java.util=ALL-UNNAMED --add-opens=java.base/java.util.concurrent=ALL-UNNAMED --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
 19-Feb-2023 17:34:42.577 INFORMACIÓN [main] org.apache.catalina.startup.VersionLoggerListener.log Nombre de la versión del servidor: Apache Tomcat/10.0.10
 19-Feb-2023 17:34:42.581 INFORMACIÓN [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:                      Jul 30 2021 09:51:27 UTC
 19-Feb-2023 17:34:42.581 INFORMACIÓN [main] org.apache.catalina.startup.VersionLoggerListener.log Número de versión de servidor:     10.0.10.0
@@ -8142,7 +7482,6 @@ NOTE: Picked up JDK_JAVA_OPTIONS:  --add-opens=java.base/java.lang=ALL-UNNAMED -
 		at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:476)
 19-Feb-2023 18:08:50.405 INFORMACIÓN [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8080"]
 19-Feb-2023 18:08:50.428 INFORMACIÓN [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-8080"]
-NOTE: Picked up JDK_JAVA_OPTIONS:  --add-opens=java.base/java.lang=ALL-UNNAMED --add-opens=java.base/java.io=ALL-UNNAMED --add-opens=java.base/java.util=ALL-UNNAMED --add-opens=java.base/java.util.concurrent=ALL-UNNAMED --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
 19-Feb-2023 18:08:52.485 INFORMACIÓN [main] org.apache.catalina.startup.VersionLoggerListener.log Nombre de la versión del servidor: Apache Tomcat/10.0.10
 19-Feb-2023 18:08:52.489 INFORMACIÓN [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:                      Jul 30 2021 09:51:27 UTC
 19-Feb-2023 18:08:52.489 INFORMACIÓN [main] org.apache.catalina.startup.VersionLoggerListener.log Número de versión de servidor:     10.0.10.0
@@ -8410,7 +7749,6 @@ NOTE: Picked up JDK_JAVA_OPTIONS:  --add-opens=java.base/java.lang=ALL-UNNAMED -
 		at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:476)
 19-Feb-2023 18:11:54.699 INFORMACIÓN [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8080"]
 19-Feb-2023 18:11:54.721 INFORMACIÓN [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-8080"]
-NOTE: Picked up JDK_JAVA_OPTIONS:  --add-opens=java.base/java.lang=ALL-UNNAMED --add-opens=java.base/java.io=ALL-UNNAMED --add-opens=java.base/java.util=ALL-UNNAMED --add-opens=java.base/java.util.concurrent=ALL-UNNAMED --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
 19-Feb-2023 18:11:56.638 INFORMACIÓN [main] org.apache.catalina.startup.VersionLoggerListener.log Nombre de la versión del servidor: Apache Tomcat/10.0.10
 19-Feb-2023 18:11:56.641 INFORMACIÓN [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:                      Jul 30 2021 09:51:27 UTC
 19-Feb-2023 18:11:56.641 INFORMACIÓN [main] org.apache.catalina.startup.VersionLoggerListener.log Número de versión de servidor:     10.0.10.0
@@ -8457,7 +7795,6 @@ NOTE: Picked up JDK_JAVA_OPTIONS:  --add-opens=java.base/java.lang=ALL-UNNAMED -
 19-Feb-2023 18:11:57.891 INFORMACIÓN [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/jordi/Escritorio/PTI/servlets/apache-tomcat-10.0.10/webapps/ROOT] has finished in [22] ms
 19-Feb-2023 18:11:57.895 INFORMACIÓN [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8080"]
 19-Feb-2023 18:11:57.909 INFORMACIÓN [main] org.apache.catalina.startup.Catalina.start Server startup in [868] milliseconds
-NOTE: Picked up JDK_JAVA_OPTIONS:  --add-opens=java.base/java.lang=ALL-UNNAMED --add-opens=java.base/java.io=ALL-UNNAMED --add-opens=java.base/java.util=ALL-UNNAMED --add-opens=java.base/java.util.concurrent=ALL-UNNAMED --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
 19-Feb-2023 18:14:02.704 INFORMACIÓN [main] org.apache.catalina.startup.VersionLoggerListener.log Nombre de la versión del servidor: Apache Tomcat/10.0.10
 19-Feb-2023 18:14:02.708 INFORMACIÓN [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:                      Jul 30 2021 09:51:27 UTC
 19-Feb-2023 18:14:02.708 INFORMACIÓN [main] org.apache.catalina.startup.VersionLoggerListener.log Número de versión de servidor:     10.0.10.0
@@ -8990,7 +8327,6 @@ NOTE: Picked up JDK_JAVA_OPTIONS:  --add-opens=java.base/java.lang=ALL-UNNAMED -
 		at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:476)
 19-Feb-2023 18:14:15.424 INFORMACIÓN [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8080"]
 19-Feb-2023 18:14:15.455 INFORMACIÓN [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-8080"]
-NOTE: Picked up JDK_JAVA_OPTIONS:  --add-opens=java.base/java.lang=ALL-UNNAMED --add-opens=java.base/java.io=ALL-UNNAMED --add-opens=java.base/java.util=ALL-UNNAMED --add-opens=java.base/java.util.concurrent=ALL-UNNAMED --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
 19-Feb-2023 18:14:16.869 INFORMACIÓN [main] org.apache.catalina.startup.VersionLoggerListener.log Nombre de la versión del servidor: Apache Tomcat/10.0.10
 19-Feb-2023 18:14:16.873 INFORMACIÓN [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:                      Jul 30 2021 09:51:27 UTC
 19-Feb-2023 18:14:16.873 INFORMACIÓN [main] org.apache.catalina.startup.VersionLoggerListener.log Número de versión de servidor:     10.0.10.0
@@ -9258,7 +8594,6 @@ NOTE: Picked up JDK_JAVA_OPTIONS:  --add-opens=java.base/java.lang=ALL-UNNAMED -
 		at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:476)
 19-Feb-2023 19:18:42.533 INFORMACIÓN [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8080"]
 19-Feb-2023 19:18:42.553 INFORMACIÓN [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-8080"]
-NOTE: Picked up JDK_JAVA_OPTIONS:  --add-opens=java.base/java.lang=ALL-UNNAMED --add-opens=java.base/java.io=ALL-UNNAMED --add-opens=java.base/java.util=ALL-UNNAMED --add-opens=java.base/java.util.concurrent=ALL-UNNAMED --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
 19-Feb-2023 19:18:47.374 INFORMACIÓN [main] org.apache.catalina.startup.VersionLoggerListener.log Nombre de la versión del servidor: Apache Tomcat/10.0.10
 19-Feb-2023 19:18:47.379 INFORMACIÓN [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:                      Jul 30 2021 09:51:27 UTC
 19-Feb-2023 19:18:47.379 INFORMACIÓN [main] org.apache.catalina.startup.VersionLoggerListener.log Número de versión de servidor:     10.0.10.0
@@ -9526,7 +8861,6 @@ NOTE: Picked up JDK_JAVA_OPTIONS:  --add-opens=java.base/java.lang=ALL-UNNAMED -
 		at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:476)
 19-Feb-2023 19:19:33.250 INFORMACIÓN [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8080"]
 19-Feb-2023 19:19:33.272 INFORMACIÓN [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-8080"]
-NOTE: Picked up JDK_JAVA_OPTIONS:  --add-opens=java.base/java.lang=ALL-UNNAMED --add-opens=java.base/java.io=ALL-UNNAMED --add-opens=java.base/java.util=ALL-UNNAMED --add-opens=java.base/java.util.concurrent=ALL-UNNAMED --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
 19-Feb-2023 19:19:35.448 INFORMACIÓN [main] org.apache.catalina.startup.VersionLoggerListener.log Nombre de la versión del servidor: Apache Tomcat/10.0.10
 19-Feb-2023 19:19:35.450 INFORMACIÓN [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:                      Jul 30 2021 09:51:27 UTC
 19-Feb-2023 19:19:35.450 INFORMACIÓN [main] org.apache.catalina.startup.VersionLoggerListener.log Número de versión de servidor:     10.0.10.0
@@ -9573,7 +8907,6 @@ NOTE: Picked up JDK_JAVA_OPTIONS:  --add-opens=java.base/java.lang=ALL-UNNAMED -
 19-Feb-2023 19:19:36.351 INFORMACIÓN [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/jordi/Escritorio/PTI/servlets/apache-tomcat-10.0.10/webapps/ROOT] has finished in [14] ms
 19-Feb-2023 19:19:36.354 INFORMACIÓN [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8080"]
 19-Feb-2023 19:19:36.363 INFORMACIÓN [main] org.apache.catalina.startup.Catalina.start Server startup in [621] milliseconds
-NOTE: Picked up JDK_JAVA_OPTIONS:  --add-opens=java.base/java.lang=ALL-UNNAMED --add-opens=java.base/java.io=ALL-UNNAMED --add-opens=java.base/java.util=ALL-UNNAMED --add-opens=java.base/java.util.concurrent=ALL-UNNAMED --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
 19-Feb-2023 19:20:45.443 INFORMACIÓN [main] org.apache.catalina.startup.VersionLoggerListener.log Nombre de la versión del servidor: Apache Tomcat/10.0.10
 19-Feb-2023 19:20:45.446 INFORMACIÓN [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:                      Jul 30 2021 09:51:27 UTC
 19-Feb-2023 19:20:45.446 INFORMACIÓN [main] org.apache.catalina.startup.VersionLoggerListener.log Número de versión de servidor:     10.0.10.0
@@ -10106,7 +9439,6 @@ NOTE: Picked up JDK_JAVA_OPTIONS:  --add-opens=java.base/java.lang=ALL-UNNAMED -
 		at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:476)
 19-Feb-2023 19:20:51.118 INFORMACIÓN [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8080"]
 19-Feb-2023 19:20:51.144 INFORMACIÓN [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-8080"]
-NOTE: Picked up JDK_JAVA_OPTIONS:  --add-opens=java.base/java.lang=ALL-UNNAMED --add-opens=java.base/java.io=ALL-UNNAMED --add-opens=java.base/java.util=ALL-UNNAMED --add-opens=java.base/java.util.concurrent=ALL-UNNAMED --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
 19-Feb-2023 19:20:53.927 INFORMACIÓN [main] org.apache.catalina.startup.VersionLoggerListener.log Nombre de la versión del servidor: Apache Tomcat/10.0.10
 19-Feb-2023 19:20:53.932 INFORMACIÓN [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:                      Jul 30 2021 09:51:27 UTC
 19-Feb-2023 19:20:53.932 INFORMACIÓN [main] org.apache.catalina.startup.VersionLoggerListener.log Número de versión de servidor:     10.0.10.0
@@ -10374,7 +9706,6 @@ NOTE: Picked up JDK_JAVA_OPTIONS:  --add-opens=java.base/java.lang=ALL-UNNAMED -
 		at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:476)
 19-Feb-2023 19:23:36.122 INFORMACIÓN [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8080"]
 19-Feb-2023 19:23:36.139 INFORMACIÓN [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-8080"]
-NOTE: Picked up JDK_JAVA_OPTIONS:  --add-opens=java.base/java.lang=ALL-UNNAMED --add-opens=java.base/java.io=ALL-UNNAMED --add-opens=java.base/java.util=ALL-UNNAMED --add-opens=java.base/java.util.concurrent=ALL-UNNAMED --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
 19-Feb-2023 19:23:38.536 INFORMACIÓN [main] org.apache.catalina.startup.VersionLoggerListener.log Nombre de la versión del servidor: Apache Tomcat/10.0.10
 19-Feb-2023 19:23:38.543 INFORMACIÓN [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:                      Jul 30 2021 09:51:27 UTC
 19-Feb-2023 19:23:38.543 INFORMACIÓN [main] org.apache.catalina.startup.VersionLoggerListener.log Número de versión de servidor:     10.0.10.0
@@ -10642,7 +9973,6 @@ NOTE: Picked up JDK_JAVA_OPTIONS:  --add-opens=java.base/java.lang=ALL-UNNAMED -
 		at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:476)
 19-Feb-2023 19:27:40.483 INFORMACIÓN [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8080"]
 19-Feb-2023 19:27:40.513 INFORMACIÓN [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-8080"]
-NOTE: Picked up JDK_JAVA_OPTIONS:  --add-opens=java.base/java.lang=ALL-UNNAMED --add-opens=java.base/java.io=ALL-UNNAMED --add-opens=java.base/java.util=ALL-UNNAMED --add-opens=java.base/java.util.concurrent=ALL-UNNAMED --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
 19-Feb-2023 19:27:44.470 INFORMACIÓN [main] org.apache.catalina.startup.VersionLoggerListener.log Nombre de la versión del servidor: Apache Tomcat/10.0.10
 19-Feb-2023 19:27:44.477 INFORMACIÓN [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:                      Jul 30 2021 09:51:27 UTC
 19-Feb-2023 19:27:44.477 INFORMACIÓN [main] org.apache.catalina.startup.VersionLoggerListener.log Número de versión de servidor:     10.0.10.0
@@ -10689,7 +10019,6 @@ NOTE: Picked up JDK_JAVA_OPTIONS:  --add-opens=java.base/java.lang=ALL-UNNAMED -
 19-Feb-2023 19:27:45.350 INFORMACIÓN [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/jordi/Escritorio/PTI/servlets/apache-tomcat-10.0.10/webapps/ROOT] has finished in [17] ms
 19-Feb-2023 19:27:45.354 INFORMACIÓN [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8080"]
 19-Feb-2023 19:27:45.363 INFORMACIÓN [main] org.apache.catalina.startup.Catalina.start Server startup in [609] milliseconds
-NOTE: Picked up JDK_JAVA_OPTIONS:  --add-opens=java.base/java.lang=ALL-UNNAMED --add-opens=java.base/java.io=ALL-UNNAMED --add-opens=java.base/java.util=ALL-UNNAMED --add-opens=java.base/java.util.concurrent=ALL-UNNAMED --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
 19-Feb-2023 19:40:48.935 INFORMACIÓN [main] org.apache.catalina.startup.VersionLoggerListener.log Nombre de la versión del servidor: Apache Tomcat/10.0.10
 19-Feb-2023 19:40:48.939 INFORMACIÓN [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:                      Jul 30 2021 09:51:27 UTC
 19-Feb-2023 19:40:48.939 INFORMACIÓN [main] org.apache.catalina.startup.VersionLoggerListener.log Número de versión de servidor:     10.0.10.0
@@ -11222,7 +10551,6 @@ NOTE: Picked up JDK_JAVA_OPTIONS:  --add-opens=java.base/java.lang=ALL-UNNAMED -
 		at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:476)
 19-Feb-2023 19:40:51.922 INFORMACIÓN [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8080"]
 19-Feb-2023 19:40:51.942 INFORMACIÓN [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-8080"]
-NOTE: Picked up JDK_JAVA_OPTIONS:  --add-opens=java.base/java.lang=ALL-UNNAMED --add-opens=java.base/java.io=ALL-UNNAMED --add-opens=java.base/java.util=ALL-UNNAMED --add-opens=java.base/java.util.concurrent=ALL-UNNAMED --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
 19-Feb-2023 19:40:54.277 INFORMACIÓN [main] org.apache.catalina.startup.VersionLoggerListener.log Nombre de la versión del servidor: Apache Tomcat/10.0.10
 19-Feb-2023 19:40:54.281 INFORMACIÓN [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:                      Jul 30 2021 09:51:27 UTC
 19-Feb-2023 19:40:54.281 INFORMACIÓN [main] org.apache.catalina.startup.VersionLoggerListener.log Número de versión de servidor:     10.0.10.0
@@ -11490,7 +10818,6 @@ NOTE: Picked up JDK_JAVA_OPTIONS:  --add-opens=java.base/java.lang=ALL-UNNAMED -
 		at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:476)
 19-Feb-2023 19:56:49.472 INFORMACIÓN [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8080"]
 19-Feb-2023 19:56:49.492 INFORMACIÓN [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-8080"]
-NOTE: Picked up JDK_JAVA_OPTIONS:  --add-opens=java.base/java.lang=ALL-UNNAMED --add-opens=java.base/java.io=ALL-UNNAMED --add-opens=java.base/java.util=ALL-UNNAMED --add-opens=java.base/java.util.concurrent=ALL-UNNAMED --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
 19-Feb-2023 19:56:52.259 INFORMACIÓN [main] org.apache.catalina.startup.VersionLoggerListener.log Nombre de la versión del servidor: Apache Tomcat/10.0.10
 19-Feb-2023 19:56:52.264 INFORMACIÓN [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:                      Jul 30 2021 09:51:27 UTC
 19-Feb-2023 19:56:52.264 INFORMACIÓN [main] org.apache.catalina.startup.VersionLoggerListener.log Número de versión de servidor:     10.0.10.0
@@ -11758,7 +11085,6 @@ NOTE: Picked up JDK_JAVA_OPTIONS:  --add-opens=java.base/java.lang=ALL-UNNAMED -
 		at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:476)
 19-Feb-2023 19:58:36.449 INFORMACIÓN [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8080"]
 19-Feb-2023 19:58:36.464 INFORMACIÓN [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-8080"]
-NOTE: Picked up JDK_JAVA_OPTIONS:  --add-opens=java.base/java.lang=ALL-UNNAMED --add-opens=java.base/java.io=ALL-UNNAMED --add-opens=java.base/java.util=ALL-UNNAMED --add-opens=java.base/java.util.concurrent=ALL-UNNAMED --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
 19-Feb-2023 19:58:40.906 INFORMACIÓN [main] org.apache.catalina.startup.VersionLoggerListener.log Nombre de la versión del servidor: Apache Tomcat/10.0.10
 19-Feb-2023 19:58:40.910 INFORMACIÓN [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:                      Jul 30 2021 09:51:27 UTC
 19-Feb-2023 19:58:40.910 INFORMACIÓN [main] org.apache.catalina.startup.VersionLoggerListener.log Número de versión de servidor:     10.0.10.0
@@ -12026,7 +11352,6 @@ NOTE: Picked up JDK_JAVA_OPTIONS:  --add-opens=java.base/java.lang=ALL-UNNAMED -
 		at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:476)
 19-Feb-2023 19:59:40.550 INFORMACIÓN [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8080"]
 19-Feb-2023 19:59:40.562 INFORMACIÓN [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-8080"]
-NOTE: Picked up JDK_JAVA_OPTIONS:  --add-opens=java.base/java.lang=ALL-UNNAMED --add-opens=java.base/java.io=ALL-UNNAMED --add-opens=java.base/java.util=ALL-UNNAMED --add-opens=java.base/java.util.concurrent=ALL-UNNAMED --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
 19-Feb-2023 19:59:43.251 INFORMACIÓN [main] org.apache.catalina.startup.VersionLoggerListener.log Nombre de la versión del servidor: Apache Tomcat/10.0.10
 19-Feb-2023 19:59:43.256 INFORMACIÓN [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:                      Jul 30 2021 09:51:27 UTC
 19-Feb-2023 19:59:43.256 INFORMACIÓN [main] org.apache.catalina.startup.VersionLoggerListener.log Número de versión de servidor:     10.0.10.0
@@ -12294,7 +11619,6 @@ NOTE: Picked up JDK_JAVA_OPTIONS:  --add-opens=java.base/java.lang=ALL-UNNAMED -
 		at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:476)
 19-Feb-2023 20:02:07.648 INFORMACIÓN [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8080"]
 19-Feb-2023 20:02:07.671 INFORMACIÓN [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-8080"]
-NOTE: Picked up JDK_JAVA_OPTIONS:  --add-opens=java.base/java.lang=ALL-UNNAMED --add-opens=java.base/java.io=ALL-UNNAMED --add-opens=java.base/java.util=ALL-UNNAMED --add-opens=java.base/java.util.concurrent=ALL-UNNAMED --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
 19-Feb-2023 20:02:09.605 INFORMACIÓN [main] org.apache.catalina.startup.VersionLoggerListener.log Nombre de la versión del servidor: Apache Tomcat/10.0.10
 19-Feb-2023 20:02:09.608 INFORMACIÓN [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:                      Jul 30 2021 09:51:27 UTC
 19-Feb-2023 20:02:09.608 INFORMACIÓN [main] org.apache.catalina.startup.VersionLoggerListener.log Número de versión de servidor:     10.0.10.0
@@ -12562,7 +11886,6 @@ NOTE: Picked up JDK_JAVA_OPTIONS:  --add-opens=java.base/java.lang=ALL-UNNAMED -
 		at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:476)
 19-Feb-2023 20:03:01.989 INFORMACIÓN [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8080"]
 19-Feb-2023 20:03:02.015 INFORMACIÓN [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-8080"]
-NOTE: Picked up JDK_JAVA_OPTIONS:  --add-opens=java.base/java.lang=ALL-UNNAMED --add-opens=java.base/java.io=ALL-UNNAMED --add-opens=java.base/java.util=ALL-UNNAMED --add-opens=java.base/java.util.concurrent=ALL-UNNAMED --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
 19-Feb-2023 20:03:03.970 INFORMACIÓN [main] org.apache.catalina.startup.VersionLoggerListener.log Nombre de la versión del servidor: Apache Tomcat/10.0.10
 19-Feb-2023 20:03:03.974 INFORMACIÓN [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:                      Jul 30 2021 09:51:27 UTC
 19-Feb-2023 20:03:03.974 INFORMACIÓN [main] org.apache.catalina.startup.VersionLoggerListener.log Número de versión de servidor:     10.0.10.0
@@ -12830,7 +12153,6 @@ NOTE: Picked up JDK_JAVA_OPTIONS:  --add-opens=java.base/java.lang=ALL-UNNAMED -
 		at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:476)
 19-Feb-2023 20:07:33.405 INFORMACIÓN [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8080"]
 19-Feb-2023 20:07:33.433 INFORMACIÓN [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-8080"]
-NOTE: Picked up JDK_JAVA_OPTIONS:  --add-opens=java.base/java.lang=ALL-UNNAMED --add-opens=java.base/java.io=ALL-UNNAMED --add-opens=java.base/java.util=ALL-UNNAMED --add-opens=java.base/java.util.concurrent=ALL-UNNAMED --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
 19-Feb-2023 20:07:38.270 INFORMACIÓN [main] org.apache.catalina.startup.VersionLoggerListener.log Nombre de la versión del servidor: Apache Tomcat/10.0.10
 19-Feb-2023 20:07:38.274 INFORMACIÓN [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:                      Jul 30 2021 09:51:27 UTC
 19-Feb-2023 20:07:38.276 INFORMACIÓN [main] org.apache.catalina.startup.VersionLoggerListener.log Número de versión de servidor:     10.0.10.0
