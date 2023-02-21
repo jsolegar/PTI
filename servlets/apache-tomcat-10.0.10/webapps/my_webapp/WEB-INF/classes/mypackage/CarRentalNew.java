@@ -35,15 +35,16 @@ public class CarRentalNew extends HttpServlet {
 	    out.println("<html><big>Discount(%):" + discount +  "</big><br></html>");
 	   
            JSONObject obj = new JSONObject();
-          
+           JSONObject objfinal = new JSONObject();
 	   obj.put("CO2_rating", co2);
 	   obj.put("Engine", engine);
 	   obj.put("Number_of_days", rentDays);
 	   obj.put("Number_of_units", numUnits);
 	   obj.put("Discount", discount);
 	   list.add(obj);
+	 objfinal.put("lista",list);
 	   try (FileWriter file = new FileWriter("orders.json")) {
-		    file.write(list.toJSONString());
+		    file.write(objfinal.toJSONString());
 		} catch (IOException e) {
 		    e.printStackTrace();
 		}

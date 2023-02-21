@@ -28,17 +28,30 @@ public class CarRentalList extends HttpServlet {
 		 JSONParser parser = new JSONParser();
 
         try (Reader reader = new FileReader("orders.json")) {
-	out.println("HOLA");
+	
             JSONObject jsonObject = (JSONObject) parser.parse(reader);
            // out.println(jsonObject);
 
            
             // loop array
-            JSONArray orders = (JSONArray) jsonObject.get("list");
-            Iterator<String> iterator = orders.iterator();
-            while (iterator.hasNext()) {
-               String co2 = (String) jsonObject.get("CO2_rating");
+            JSONArray orders = (JSONArray) jsonObject.get("lista");
+            Iterator<JSONObject> CO2 = orders.iterator();
+            Iterator<JSONObject> ENGINE = orders.iterator();
+            Iterator<JSONObject> DAYS = orders.iterator();
+            Iterator<JSONObject> UNITS = orders.iterator();
+            Iterator<JSONObject> DISCOUNT = orders.iterator();
+            while (CO2.hasNext()) {
+               String co2 = (String) CO2.next().get("CO2_rating");
+               String engine = (String)  ENGINE.next().get("Engine");
+               String rentDays = (String) DAYS.next().get("Number_of_days");
+               String numUnits = (String) UNITS.next().get("Number_of_units");
+               String discount = (String) DISCOUNT.next().get("Discount");
                out.println("<html><big>CO2 rating:"+ co2 +"</big><br></html>");
+               out.println("<html><big>Engine:"+engine +"</big><br></html>");
+	       out.println("<html><big>Number of days:" +rentDays + "</big><br></html>");
+	       out.println("<html><big>Number of units:" + numUnits+ "</big><br></html>");
+	       out.println("<html><big>Discount(%):" + discount +  "</big><br></html>");
+	       out.println("<html><br></html>");
             }
 
         } catch (IOException e) {
