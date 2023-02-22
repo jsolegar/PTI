@@ -1,0 +1,23 @@
+127.0.0.1 - - [22/Feb/2023:12:49:08 +0100] "GET /my_webapp/carrental_home.html HTTP/1.1" 304 -
+127.0.0.1 - - [22/Feb/2023:12:49:19 +0100] "GET /my_webapp/carrental_form_new.html HTTP/1.1" 304 -
+127.0.0.1 - - [22/Feb/2023:12:49:43 +0100] "GET /my_webapp/new?co2_rating=54&sub_model_vehicle=Hybrid&dies_lloguer=1&num_vehicles=1&descompte=0.0&llogar=Submit+%28GET%29 HTTP/1.1" 500 225
+127.0.0.1 - - [22/Feb/2023:12:50:25 +0100] "GET /my_webapp/new?co2_rating=54&sub_model_vehicle=Hybrid&dies_lloguer=1&num_vehicles=1&descompte=0.0&llogar=Submit+%28GET%29 HTTP/1.1" 200 225
+127.0.0.1 - - [22/Feb/2023:12:50:39 +0100] "GET /my_webapp/new?co2_rating=82&sub_model_vehicle=Hybrid&dies_lloguer=1&num_vehicles=1&descompte=0.0&llogar=Submit+%28GET%29 HTTP/1.1" 500 223
+127.0.0.1 - - [22/Feb/2023:12:50:41 +0100] "GET /my_webapp/carrental_form_list.html HTTP/1.1" 304 -
+127.0.0.1 - - [22/Feb/2023:12:50:42 +0100] "POST /my_webapp/list HTTP/1.1" 200 243
+127.0.0.1 - - [22/Feb/2023:12:50:55 +0100] "GET /my_webapp/new?co2_rating=71&sub_model_vehicle=Hybrid&dies_lloguer=1&num_vehicles=1&descompte=0.0&llogar=Submit+%28GET%29 HTTP/1.1" 500 220
+127.0.0.1 - - [22/Feb/2023:12:54:53 +0100] "GET /my_webapp/new?co2_rating=71&sub_model_vehicle=Hybrid&dies_lloguer=1&num_vehicles=1&descompte=0.0&llogar=Submit+%28GET%29 HTTP/1.1" 200 220
+127.0.0.1 - - [22/Feb/2023:12:54:58 +0100] "GET /my_webapp/new?co2_rating=82&sub_model_vehicle=Hybrid&dies_lloguer=1&num_vehicles=1&descompte=0.0&llogar=Submit+%28GET%29 HTTP/1.1" 200 223
+127.0.0.1 - - [22/Feb/2023:12:55:02 +0100] "POST /my_webapp/list HTTP/1.1" 200 479
+127.0.0.1 - - [22/Feb/2023:12:55:29 +0100] "GET /my_webapp/new?co2_rating=71&sub_model_vehicle=Electric&dies_lloguer=1&num_vehicles=1&descompte=65&llogar=Submit+%28GET%29 HTTP/1.1" 200 221
+127.0.0.1 - - [22/Feb/2023:12:55:32 +0100] "POST /my_webapp/list HTTP/1.1" 200 718
+127.0.0.1 - - [22/Feb/2023:12:55:58 +0100] "GET / HTTP/1.1" 200 11163
+127.0.0.1 - - [22/Feb/2023:12:55:58 +0100] "GET /tomcat.css HTTP/1.1" 304 -
+127.0.0.1 - - [22/Feb/2023:12:55:58 +0100] "GET /tomcat.svg HTTP/1.1" 304 -
+127.0.0.1 - - [22/Feb/2023:12:55:58 +0100] "GET /bg-nav.png HTTP/1.1" 304 -
+127.0.0.1 - - [22/Feb/2023:12:55:58 +0100] "GET /asf-logo-wide.svg HTTP/1.1" 304 -
+127.0.0.1 - - [22/Feb/2023:12:55:58 +0100] "GET /bg-button.png HTTP/1.1" 304 -
+127.0.0.1 - - [22/Feb/2023:12:55:58 +0100] "GET /bg-middle.png HTTP/1.1" 304 -
+127.0.0.1 - - [22/Feb/2023:12:55:58 +0100] "GET /bg-upper.png HTTP/1.1" 304 -
+127.0.0.1 - - [22/Feb/2023:12:56:19 +0100] "-" 400 -
+127.0.0.1 - - [22/Feb/2023:12:56:19 +0100] "-" 400 -

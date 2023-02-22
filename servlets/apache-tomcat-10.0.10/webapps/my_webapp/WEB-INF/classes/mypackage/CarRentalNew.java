@@ -10,10 +10,15 @@ import org.json.simple.JSONObject;
 import java.io.FileWriter;
 import java.io.IOException;
 
+import org.json.simple.parser.JSONParser;
+import org.json.simple.parser.ParseException;
+
+import java.util.Iterator;
+
 public class CarRentalNew extends HttpServlet {
 
-  int cont = 0;
-  JSONArray list = new JSONArray();
+ 
+  
   public void doGet(HttpServletRequest req, HttpServletResponse res)
                     throws ServletException, IOException {
     res.setContentType("text/html");
@@ -33,6 +38,22 @@ public class CarRentalNew extends HttpServlet {
 	    out.println("<html><big>Number of days:" +rentDays + "</big><br></html>");
 	    out.println("<html><big>Number of units:" + numUnits+ "</big><br></html>");
 	    out.println("<html><big>Discount(%):" + discount +  "</big><br></html>");
+	   
+	   File f = new File("orders.json");
+	   JSONArray list = new JSONArray();
+	   if (f.exists()) {
+	   	try (Reader reader = new FileReader("orders.json")) {
+	   		JSONParser parser = new JSONParser();
+	   		JSONObject jsonObject = (JSONObject) parser.parse(reader);
+	   		JSONArray orders = (JSONArray) jsonObject.get("lista");
+	   		Iterator<JSONObject> iterator = orders.iterator();
+	   		 while (iterator.hasNext()) {
+           		 list.add(iterator.next());
+      			  }
+	   	} catch (ParseException e) {
+	   		e.printStackTrace();
+	   	}
+	   }
 	   
            JSONObject obj = new JSONObject();
            JSONObject objfinal = new JSONObject();
