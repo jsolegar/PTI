@@ -1,0 +1,7 @@
+version: "3.9"
+services: 
+  servlets: 
+    build: .
+    ports: 
+      - "8080:8080"
+      - "8443:8443"
