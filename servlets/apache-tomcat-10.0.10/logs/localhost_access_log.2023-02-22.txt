@@ -21,3 +21,16 @@
 127.0.0.1 - - [22/Feb/2023:12:55:58 +0100] "GET /bg-upper.png HTTP/1.1" 304 -
 127.0.0.1 - - [22/Feb/2023:12:56:19 +0100] "-" 400 -
 127.0.0.1 - - [22/Feb/2023:12:56:19 +0100] "-" 400 -
+127.0.0.1 - - [22/Feb/2023:13:16:05 +0100] "GET /my_webapp/index.html HTTP/1.1" 404 712
+127.0.0.1 - - [22/Feb/2023:13:17:29 +0100] "GET /my_webapp/index.html HTTP/1.1" 404 712
+127.0.0.1 - - [22/Feb/2023:13:19:34 +0100] "GET /my_webapp/carrental_home.html HTTP/1.1" 304 -
+127.0.0.1 - - [22/Feb/2023:13:19:35 +0100] "GET /my_webapp/carrental_home.html HTTP/1.1" 304 -
+127.0.0.1 - - [22/Feb/2023:13:19:35 +0100] "GET /my_webapp/carrental_home.html HTTP/1.1" 304 -
+127.0.0.1 - - [22/Feb/2023:13:19:36 +0100] "GET /my_webapp/carrental_home.html HTTP/1.1" 304 -
+127.0.0.1 - - [22/Feb/2023:13:19:36 +0100] "GET /my_webapp/carrental_home.html HTTP/1.1" 304 -
+127.0.0.1 - - [22/Feb/2023:13:19:37 +0100] "GET /my_webapp/carrental_home.html HTTP/1.1" 304 -
+127.0.0.1 - - [22/Feb/2023:13:19:37 +0100] "GET /my_webapp/carrental_home.html HTTP/1.1" 304 -
+127.0.0.1 - - [22/Feb/2023:13:19:52 +0100] "GET /my_webapp/carrental_home.html HTTP/1.1" 304 -
+127.0.0.1 - - [22/Feb/2023:13:19:52 +0100] "GET /my_webapp/carrental_home.html HTTP/1.1" 304 -
+127.0.0.1 - - [22/Feb/2023:13:24:16 +0100] "GET /my_webapp/carrental_home.html HTTP/1.1" 200 347
+127.0.0.1 - - [22/Feb/2023:13:24:34 +0100] "GET /my_webapp/ HTTP/1.1" 404 702
