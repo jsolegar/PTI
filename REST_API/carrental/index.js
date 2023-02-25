@@ -27,9 +27,7 @@ app.post('/new', (req, res) => {
     }; 
 
     let rentals = JSON.parse(fs.readFileSync(data_path));
-    console.log(cars);
-    rentals.push(rental);
-    console.log(cars);
+    rentals['car'].push(rental);
 
     fs.writeFileSync(data_path, JSON.stringify(rentals), (err) => {
         if (err) return console.log(err);

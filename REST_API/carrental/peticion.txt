@@ -1,0 +1,1 @@
+curl -i -H "Content-Type: application/json" -d '{"maker": "Victor", "model": "Laguna", "days": "3", "units": "2"}' http://localhost:8080/new
