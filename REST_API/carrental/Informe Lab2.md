@@ -1,4 +1,4 @@
-# Java Servlets
+# REST API
 
 Alumnos: 
 
