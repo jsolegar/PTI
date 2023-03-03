@@ -20,7 +20,6 @@ class Blockchain:
     def register_node(self, address):
         """
         Add a new node to the list of nodes
-
         :param address: Address of node. Eg. 'http://192.168.0.5:5000'
         """
 
@@ -37,7 +36,6 @@ class Blockchain:
     def valid_chain(self, chain):
         """
         Determine if a given blockchain is valid
-
         :param chain: A blockchain
         :return: True if valid, False if not
         """
@@ -68,7 +66,6 @@ class Blockchain:
         """
         This is our consensus algorithm, it resolves conflicts
         by replacing our chain with the longest one in the network.
-
         :return: True if our chain was replaced, False if not
         """
 
@@ -101,7 +98,6 @@ class Blockchain:
     def new_block(self, proof, previous_hash):
         """
         Create a new Block in the Blockchain
-
         :param proof: The proof given by the Proof of Work algorithm
         :param previous_hash: Hash of previous Block
         :return: New Block
@@ -124,7 +120,6 @@ class Blockchain:
     def new_transaction(self, sender, recipient, amount, order):
         """
         Creates a new transaction to go into the next mined Block
-
         :param sender: Address of the Sender
         :param recipient: Address of the Recipient
         :param amount: Amount
@@ -148,7 +143,6 @@ class Blockchain:
     def hash(block):
         """
         Creates a SHA-256 hash of a Block
-
         :param block: Block
         """
 
@@ -159,10 +153,8 @@ class Blockchain:
     def proof_of_work(self, last_block):
         """
         Simple Proof of Work Algorithm:
-
          - Find a number p' such that hash(pp') contains leading 4 zeroes
          - Where p is the previous proof, and p' is the new proof
-
         :param last_block: <dict> last Block
         :return: <int>
         """
@@ -180,12 +172,10 @@ class Blockchain:
     def valid_proof(last_proof, proof, last_hash):
         """
         Validates the Proof
-
         :param last_proof: <int> Previous Proof
         :param proof: <int> Current Proof
         :param last_hash: <str> The hash of the Previous Block
         :return: <bool> True if correct, False if not.
-
         """
 
         guess = f'{last_proof}{proof}{last_hash}'.encode()
@@ -294,34 +284,31 @@ def consensus():
     return jsonify(response), 200
 
 @app.route('/nodes/list', methods=['GET'])
-def list():
+def listar():
 	response = {
-		'message': 'Listing nodes',
-		 'nodes': list(blockchain.nodes),
+		'total_nodes': list(blockchain.nodes),
 	}
-	return jsonfy(response),200
-	
-
-@app.route('/validate', methods=['GET'])
-def validate():
-	if blockchain.valid_chain(blockchain.chain):
-		response = {
-			'message': 'Chain OK'
-		 }
-	else:
-		response = {
-			'message': 'Incorrect chain'
-		}
-	return jsonfy(response),200
-		 
-
-@app.route('/nodes/manipulate', methods=['POST'])
-def manipulate_chain():
-	i = blockchain.new_transaction('J','Jordi','2001')
-	response = {
-		'message': f'This transaction will be added to the Block {i}'}
 	return jsonify(response),200
 
+
+@app.route('/validate', methods=['GET'])
+def validar():
+	if blockchain.valid_chain(blockchain.chain):
+		response = {
+			'message': 'Chain OK',
+		}
+	else:
+		response = {
+			'message': 'Error al validar'
+		}
+	return jsonify(response),200
+
+@app.route('/nodes/manipulate', methods=['POST'])
+def manipular():
+	block = blockchain.new_transaction('C','Carles','1998')
+	response = {
+		'message': f'Transaccion anadida al bloque {block}'}
+	return jsonify(response),200
 
 if __name__ == '__main__':
     from argparse import ArgumentParser
