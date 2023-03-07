@@ -255,7 +255,7 @@ def register_nodes():
     if nodes is None:
         return "Error: Please supply a valid list of nodes", 400
 
-    #for node in nodes:
+    # for node in nodes:
     #    blockchain.register_node(node)
     blockchain.register_node(nodes)
 
@@ -283,32 +283,36 @@ def consensus():
 
     return jsonify(response), 200
 
+
 @app.route('/nodes/list', methods=['GET'])
 def listar():
-	response = {
-		'total_nodes': list(blockchain.nodes),
-	}
-	return jsonify(response),200
+    response = {
+            'total_nodes': list(blockchain.nodes),
+            }
+    return jsonify(response), 200
 
 
 @app.route('/validate', methods=['GET'])
 def validar():
-	if blockchain.valid_chain(blockchain.chain):
-		response = {
-			'message': 'Chain OK',
-		}
-	else:
-		response = {
-			'message': 'Error al validar'
-		}
-	return jsonify(response),200
+    if blockchain.valid_chain(blockchain.chain):
+        response = {
+                'message': 'Chain OK',
+                }
+    else:
+        response = {
+                'message': 'Error al validar'
+                }
+    return jsonify(response), 200
+
 
 @app.route('/nodes/manipulate', methods=['POST'])
 def manipular():
-	block = blockchain.new_transaction('C','Carles','1998')
-	response = {
-		'message': f'Transaccion anadida al bloque {block}'}
-	return jsonify(response),200
+    del blockchain.chain[-1]
+    block = blockchain.new_transaction('D', 'Víctor', '2023', '23')
+    response = {
+            'message': f'Transaccion añadida al bloque {block}'}
+    return jsonify(response), 200
+
 
 if __name__ == '__main__':
     from argparse import ArgumentParser
