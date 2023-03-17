@@ -99,9 +99,10 @@ Para comprobar que esto funciona correctamente, podemos usar el comando `curl -X
    Existen diferentes tipos de Proof of Work:
 
    - HashCash: Es el caso de Bitcoin. Cada bloque nuevo debe resolver un acertijo matemático que solo puede ser resuelto mediante pruena y error. Estos acertijos son resueltos por *mineros*, haciendo millones de intentos. Esta persona recibe una recompensa como compensación por el trabajo. 
-   - 
+   - Proof of Stake (Prueba de participación): Es un mecanismo de consenso que tiene en cuenta la cantidad de tokens que tiene cada participante de la red. Cuantos más tokens haya conseguido, más poder tendrá para consolidar cada bloque. 
+   - Proof of Importance(Prueba de Importancia): Es un mecanismo de consenso. La importancia no solo valora la cantidad de tokens que tiene el minero si no que se tiene en cuenta la cantidad de transacciones entrantes/salientes desde su cuenta. De esta manera fomenta que haya transacciones en la red. 
 
-   
+   En caso de que querrámos implementar alguno de estos, el caso del HashCash sería el más fácil de hacer. Para ello tendría que realizar un conjunto de problemas matemáticos complejos antes de escribir. Solo tendríamos que buscar alguna manera de generar problemas matemáticos a resolver para el nodo antes de que pueda realizar la transacción. 
 
    Referencias: 
 
